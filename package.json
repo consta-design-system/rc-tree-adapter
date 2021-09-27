@@ -1,5 +1,5 @@
 {
-  "name": "@consta/table",
+  "name": "@consta/tree",
   "version": "0.1.0",
   "scripts": {
     "build:css": "NODE_ENV=production postcss 'src/**/*.css' --base src --dir lib",
@@ -73,8 +73,7 @@
     "react-dom": "16.8.6"
   },
   "dependencies": {
-    "@bem-react/classname": "1.5.8",
-    "rc-tree": "^5.0.5"
+    "@bem-react/classname": "1.5.8"
   },
   "resolutions": {
     "@types/react": "16.9.34",
