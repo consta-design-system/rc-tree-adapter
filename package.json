@@ -1,5 +1,5 @@
 {
-  "name": "@consta/tree",
+  "name": "@consta/rc-tree",
   "version": "0.1.0",
   "scripts": {
     "build:css": "NODE_ENV=production postcss 'src/**/*.css' --base src --dir lib",
