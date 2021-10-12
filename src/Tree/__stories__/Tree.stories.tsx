@@ -5,6 +5,8 @@ import { createMetadata } from '@/__private__/storybook'
 import { data } from '../__mocks__/data.mock'
 import { Tree } from '../Tree'
 
+import mdx from './Tree.docs.mdx'
+
 const defaultExpandedKeys = ['0', '0-2', '0-9-2']
 
 const motion = {
@@ -34,4 +36,9 @@ export function Playground() {
 export default createMetadata({
   title: 'Компоненты|/Tree',
   id: 'components/Tree',
+  parameters: {
+    docs: {
+      page: mdx,
+    },
+  },
 })
