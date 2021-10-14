@@ -1,36 +1,14 @@
 import React from 'react'
 
-import { createMetadata } from '@/__private__/storybook'
-
+import { createMetadata } from '../../__private__/storybook'
 import { data } from '../__mocks__/data.mock'
 import { Tree } from '../Tree'
 
 import mdx from './Tree.docs.mdx'
-
-const defaultExpandedKeys = ['0', '0-2', '0-9-2']
-
-const motion = {
-  motionName: 'node-motion',
-  motionAppear: false,
-  onAppearStart: () => ({ height: 0 }),
-  onAppearActive: (node: HTMLElement) => ({ height: node?.scrollHeight }),
-  onLeaveStart: (node: HTMLElement) => ({ height: node.offsetHeight }),
-  onLeaveActive: () => ({ height: 0 }),
-}
+import './TreeStories.css'
 
 export function Playground() {
-  return (
-    <Tree
-      defaultExpandAll
-      defaultExpandedKeys={defaultExpandedKeys}
-      motion={motion}
-      height={200}
-      itemHeight={20}
-      style={{ border: '1px solid #000' }}
-      treeData={data}
-      prefixCls={''}
-    />
-  )
+  return <Tree defaultExpandAll treeData={data} height={150} prefixCls="Tree" />
 }
 
 export default createMetadata({
