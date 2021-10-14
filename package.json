@@ -78,6 +78,7 @@
   },
   "dependencies": {
     "@bem-react/classname": "^1.5.8",
+    "@consta/uikit": "^3.7.0",
     "rc-tree": "^5.2.0"
   },
   "resolutions": {

@@ -29,5 +29,5 @@ const data = [
 ]
 
 export function TreeExample() {
-  return <Tree treeData={data} defaultExpandAll prefixCls={''} />
+  return <Tree treeData={data} defaultExpandAll />
 }
