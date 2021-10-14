@@ -1,4 +1,4 @@
-# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | RCTable
+# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | Tree
 
 Это компонент Tree для дизайн-системы Consta: дерево, подходит для создания иерархических структур. Компонент взят из библиотеки [rc-tree](https://github.com/react-component/tree) и адаптирован для [дизайн-системы Consta](https://consta.gazprom-neft.ru/).
 
@@ -8,10 +8,10 @@
 
 ```sh
 # NPM
-$ npm install @consta/rc-tree
+$ npm install @consta/tree
 
 # Yarn
-$ yarn add @consta/rc-tree
+$ yarn add @consta/tree
 ```
 
 ## Подключите зависимости
@@ -23,8 +23,8 @@ $ yarn add @consta/rc-tree
 Например, так:
 
 ```js
-import { Theme, presetGpnDefault } from '@consta/uikit/Theme';
-import { Tree } from '@consta/rc-tree/Tree';
+import { Theme, presetGpnDefault } from '@consta/uikit/Theme'
+import { Tree } from '@consta/tree'
 
 const data = [
   {
@@ -50,11 +50,11 @@ const data = [
       },
     ],
   },
-];
+]
 
 const App = () => {
-  return <Tree treeData={data} defaultExpandAll prefixCls={''}/>;
-};
+  return <Tree treeData={data} defaultExpandAll prefixCls={''} />
+}
 ```
 
 ## Разработка

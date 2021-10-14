@@ -61,6 +61,10 @@
       "stylelint --fix",
       "git add"
     ],
+    "*.{md,mdx}": [
+      "prettier --write",
+      "git add"
+    ],
     "{src,scripts,config}/**/*.{json,js}": [
       "prettier --write",
       "eslint --fix",
@@ -68,12 +72,12 @@
     ]
   },
   "peerDependencies": {
-    "@consta/uikit": "1.12.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6"
+    "@consta/uikit": "^1.12.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "@bem-react/classname": "1.5.8",
+    "@bem-react/classname": "^1.5.8",
     "rc-tree": "^5.2.0"
   },
   "resolutions": {
