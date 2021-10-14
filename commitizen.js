@@ -13,7 +13,7 @@ module.exports = {
     { value: 'release', name: 'release      New release' },
   ],
 
-  scopes: [{ name: 'custom' }, { name: 'global' }],
+  scopes: [{ name: 'custom' }, { name: 'components' }, { name: 'global' }],
 
   messages: {
     type: 'Type of change',
@@ -23,9 +23,9 @@ module.exports = {
     body: 'Detailed description of changes:\n',
     breaking: 'Description BREAKING CHANGES:\n',
     confirmCommit: 'Save the resulting commit?',
-    footer: 'Issue number  (Example: #101):\n',
+    footer: 'Issue number  (Example: #101 #102):\n',
   },
-  footerPrefix: 'issue - ',
+  footerPrefix: 'closes',
   allowBreakingChanges: ['feat', 'fix', 'test', 'refactor', 'docs', 'chore'],
   allowCustomScopes: true,
   subjectLimit: 100,

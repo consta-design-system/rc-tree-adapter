@@ -1,19 +1,24 @@
 import { TreeExample } from './examples/TreeExample/TreeExample'
 
-
-import { RemadeInfo, RemadeTableInfo } from '@/__private__/storybook/components/RemadeInfo/RemadeInfo'
-
+import {
+  RemadeInfo,
+  RemadeTableInfo,
+} from '@/__private__/storybook/components/RemadeInfo/RemadeInfo'
 
 # Tree
 
 ```tsx
-import { Tree } from '@consta/rc-tree/Tree'
+import { Tree } from '@consta/tree'
 ```
 
 Дерево, подходит для создания иерархических структур,
 например, каталога файлов, разложенных по папкам.
 
-<RemadeInfo commponentName="Tree" apiUrl="https://github.com/react-component/tree" libraryName="rc-tree" />
+<RemadeInfo
+  commponentName="Tree"
+  apiUrl="https://github.com/react-component/tree"
+  libraryName="rc-tree"
+/>
 
 - [Дерево](#дерево)
 - [Импорт](#импорт)
@@ -22,6 +27,7 @@ import { Tree } from '@consta/rc-tree/Tree'
 ## Дерево
 
 Создайте объект с описанием дерева:
+
 - `key` — идентификатор ветки,
 - `title` — название ветки,
 - `children` — объект с дочерними элементами (если они есть).
@@ -53,7 +59,7 @@ const data = [
       },
     ],
   },
-];
+]
 ```
 
 Чтобы вывести дерево, передайте в свойстве `treeData` объект с данными.
@@ -62,9 +68,8 @@ const data = [
 
 Укажите префикс для CSS-классов в свойстве `prefixCls` (это обязательно). Если префикс не нужен, поставьте `prefixCls={''}`.
 
-
 ```tsx
-<Tree treeData={data} defaultExpandAll prefixCls={''}/>
+<Tree treeData={data} defaultExpandAll prefixCls={''} />
 ```
 
 <TreeExample />
@@ -72,24 +77,24 @@ const data = [
 ## Импорт
 
 ```tsx
-import { Tree } from '@consta/rc-tree/Tree'
+import { Tree } from '@consta/tree'
 ```
 
 ## Свойства
 
 <RemadeTableInfo apiUrl="https://github.com/react-component/tree" />
 
-| Свойство | Тип и значения | По умолчанию | Описание |
-| -------- | -------------- | ------------ | -------- |
-| [`dataTree`](#дерево)  | `Data[]`       | -            | Объект с данными для дерева         |
-| [`defaultExpandAll?`](#дерево)  | `bool`       | -            | Раскрывает все ветки        |
-| [`defaultExpandedKeys?`](#дерево)  | `object`       | -            |  Раскрывает ветки по идентификаторам      |
-| [`prefixCls`](#дерево)  | `string`       | 'rc-tree'            |  Префикс для CSS-классов      |
+| Свойство                          | Тип и значения | По умолчанию | Описание                            |
+| --------------------------------- | -------------- | ------------ | ----------------------------------- |
+| [`dataTree`](#дерево)             | `Data[]`       | -            | Объект с данными для дерева         |
+| [`defaultExpandAll?`](#дерево)    | `bool`         | -            | Раскрывает все ветки                |
+| [`defaultExpandedKeys?`](#дерево) | `object`       | -            | Раскрывает ветки по идентификаторам |
+| [`prefixCls`](#дерево)            | `string`       | 'rc-tree'    | Префикс для CSS-классов             |
 
 ### Атрибуты веток
 
-| Свойство | Тип и значения | По умолчанию | Описание |
-| -------- | -------------- | ------------ | -------- |
-| [`key`](#дерево)  | `string`       | -            | Уникальный идентификатор ветки  |
-| [`title`](#дерево)  | `string`       | -            | Название ветки  |
-| [`children`](#дерево)  | `object`       | -            | Объект с дочерними элементами  |
+| Свойство              | Тип и значения | По умолчанию | Описание                       |
+| --------------------- | -------------- | ------------ | ------------------------------ |
+| [`key`](#дерево)      | `string`       | -            | Уникальный идентификатор ветки |
+| [`title`](#дерево)    | `string`       | -            | Название ветки                 |
+| [`children`](#дерево) | `object`       | -            | Объект с дочерними элементами  |
