@@ -1,5 +1,12 @@
 # Changelog
 
+## v0.1.2 (21/10/2021)
+- [feat(Tree): add default styles and change props (#5)](https://github.com/gazprom-neft/tree/commit/23c915e754e00f0afab809a806c4a018dbdeb046) - [@N1MBER](https://github.com/N1MBER)
+- [docs(Link): fix link](https://github.com/gazprom-neft/tree/commit/b4dfd82787293b45ef2446f6940d48cacb1bd851) - [@N1MBER](https://github.com/N1MBER)
+- [docs(Tree): fix styles and data for example](https://github.com/gazprom-neft/tree/commit/c6d10a41e00fb7a43482dfa20d3d23e5e4f1150e) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v0.1.1 (14/10/2021)
 - [chore(global): edit settings](https://github.com/gazprom-neft/tree/commit/81f99436aef1c095b3b2c13f53fb7d59837cec88) - [@gizeasy](https://github.com/gizeasy)
 - [docs(common): edit common page (#4)](https://github.com/gazprom-neft/tree/commit/4b083116fdfb6a974241f05d8e5f706c75dd12e3) - [@arhayka](https://github.com/arhayka)
