@@ -18,5 +18,14 @@ module.exports = {
         terms: ['TODO', 'todo'],
       },
     ],
+    '@typescript-eslint/ban-types': ['off'],
+    '@typescript-eslint/tslint/config': [
+      'error',
+      {
+        rules: {
+          'no-array-mutation': false,
+        },
+      },
+    ],
   },
 }

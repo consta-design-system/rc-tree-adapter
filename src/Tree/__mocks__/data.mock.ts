@@ -18,7 +18,6 @@ export const data = [
           { key: '0-0-1-7', title: 'parent 1-2-7' },
           { key: '0-0-1-8', title: 'parent 1-2-8' },
           { key: '0-0-1-9', title: 'parent 1-2-9' },
-          { key: 1128, title: 1128 },
         ],
       },
     ],
