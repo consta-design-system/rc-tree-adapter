@@ -72,13 +72,10 @@
     ]
   },
   "peerDependencies": {
-    "@consta/uikit": "^1.12.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
+    "@consta/uikit": ">= 3.9.3"
   },
   "dependencies": {
     "@bem-react/classname": "^1.5.8",
-    "@consta/uikit": "^3.7.0",
     "rc-tree": "^5.2.0"
   },
   "resolutions": {
@@ -98,6 +95,7 @@
     "@babel/cli": "7.10.5",
     "@babel/plugin-transform-react-jsx": "7.3.0",
     "@babel/preset-typescript": "7.10.4",
+    "@consta/uikit": ">= 3.9.3",
     "@consta/widgets-configs": "1.5.0",
     "@consta/widgets-utils": "0.2.14",
     "@mdx-js/loader": "1.5.9",
