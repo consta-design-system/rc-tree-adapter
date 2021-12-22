@@ -1,1 +1,1 @@
-export * from './Tree/Tree'
+export * from './useRcTreeAdapter/useRcTreeAdapter'

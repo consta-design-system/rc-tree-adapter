@@ -5,12 +5,14 @@ import { boolean, select } from '@storybook/addon-knobs'
 
 import { createMetadata } from '../../__private__/storybook'
 import { data } from '../__mocks__/data.mock'
-import { Tree } from '../Tree'
 
-import mdx from './Tree.docs.mdx'
-import './TreeStories.css'
+import { default as RCTree } from 'rc-tree'
 
-const cnTreeStories = cn('TreeStories')
+import mdx from './UseRcTreeAdapter.docs.mdx'
+import './UseRcTreeAdapterStories.css'
+import { useRcTreeAdapter } from '@/useRcTreeAdapter/useRcTreeAdapter'
+
+const cnUseRcTreeAdapterStories = cn('UseRcTreeAdapterStories')
 
 const defaultKnobs = () => ({
   size: select('size', ['s', 'm'], 's'),
@@ -22,23 +24,25 @@ const defaultKnobs = () => ({
 export function Playground() {
   const { defaultExpandAll, showIcon, size, checkable } = defaultKnobs()
 
+  const treeProps = useRcTreeAdapter({
+    height: 150,
+    treeData: data,
+    defaultExpandAll,
+    showIcon,
+    size,
+    checkable,
+  })
+
   return (
-    <div className={cnTreeStories()}>
-      <Tree
-        showIcon={showIcon}
-        checkable={checkable}
-        size={size}
-        defaultExpandAll={defaultExpandAll}
-        treeData={data}
-        height={150}
-      />
+    <div className={cnUseRcTreeAdapterStories()}>
+      <RCTree {...treeProps} />
     </div>
   )
 }
 
 export default createMetadata({
-  title: 'Компоненты|/Tree',
-  id: 'components/Tree',
+  title: 'Hooks|/useRcTreeAdapter',
+  id: 'hooks/useRcTreeAdapter',
   parameters: {
     docs: {
       page: mdx,
