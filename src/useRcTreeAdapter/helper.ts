@@ -1,10 +1,13 @@
-import { TreeProps as RCTreeProps } from 'rc-tree/lib/Tree'
+import { IconType } from 'rc-tree/lib/interface'
 
-type ExcludeProps = 'prefixCls'
-
-type UseRcTreeAdapterProps = Omit<RCTreeProps, ExcludeProps> & {
-  prefixCls?: string
+export type UseRcTreeAdapterProps = UseRcTreeAdapterPropsResults & {
   size?: 's' | 'm'
 }
 
-export type UseRcTreeAdapter = (props: UseRcTreeAdapterProps) => RCTreeProps
+export type UseRcTreeAdapterPropsResults = {
+  prefixCls?: string
+  switcherIcon?: IconType
+  showIcon?: boolean
+}
+
+export type UseRcTreeAdapter = (props?: UseRcTreeAdapterProps) => UseRcTreeAdapterPropsResults

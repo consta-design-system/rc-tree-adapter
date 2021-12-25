@@ -25,17 +25,19 @@ export function Playground() {
   const { defaultExpandAll, showIcon, size, checkable } = defaultKnobs()
 
   const treeProps = useRcTreeAdapter({
-    height: 150,
-    treeData: data,
-    defaultExpandAll,
     showIcon,
     size,
-    checkable,
   })
 
   return (
     <div className={cnUseRcTreeAdapterStories()}>
-      <RCTree {...treeProps} />
+      <RCTree
+        {...treeProps}
+        height={150}
+        treeData={data}
+        defaultExpandAll={defaultExpandAll}
+        checkable={checkable}
+      />
     </div>
   )
 }

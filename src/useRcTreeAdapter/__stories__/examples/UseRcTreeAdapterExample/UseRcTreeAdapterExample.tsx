@@ -1,11 +1,11 @@
 import React from 'react'
 
 import { default as RCTree } from 'rc-tree'
-import { useRcTreeAdapter } from '@/useRcTreeAdapter/useRcTreeAdapter'
 import { data } from '@/useRcTreeAdapter/__mocks__/data.mock'
+import { customPrefixCls } from '@/customPrefixCls/customPrefixCls'
 
-export function UseRcTreeAdapterStoriesExample() {
-  const treeProps = useRcTreeAdapter({ treeData: data, defaultExpandAll: true })
+export function UseRcTreeAdapterExample() {
+  const prefix = customPrefixCls()
 
-  return <RCTree {...treeProps} />
+  return <RCTree prefixCls={prefix} treeData={data} defaultExpandAll />
 }

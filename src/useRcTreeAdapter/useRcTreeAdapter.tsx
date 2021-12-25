@@ -1,25 +1,17 @@
 import React from 'react'
 
-import { cn } from '@/__private__/utils/bem'
-import { UseRcTreeAdapter } from './helper'
+import { UseRcTreeAdapter, UseRcTreeAdapterProps } from './helper'
 import { IconArrowRight } from '@consta/uikit/IconArrowRight'
-
+import { customPrefixCls } from '@/customPrefixCls/customPrefixCls'
 import './UseRcTreeAdapter.css'
 
-const cnTree = cn('rc-tree')
-
 export const useRcTreeAdapter: UseRcTreeAdapter = props => {
-  const { size = 's', prefixCls, switcherIcon, showIcon = false } = props
-
-  const customPrefixCls = cnTree({ size }, [prefixCls])
-    .split(' ')
-    .reverse()
-    .join(' ')
+  const params = props || ({} as UseRcTreeAdapterProps)
+  const { size, prefixCls, switcherIcon, showIcon = false } = params
 
   return {
     switcherIcon: switcherIcon || <IconArrowRight size={size} />,
-    prefixCls: customPrefixCls,
+    prefixCls: customPrefixCls({ size, prefixCls }),
     showIcon,
-    ...props,
   }
 }
