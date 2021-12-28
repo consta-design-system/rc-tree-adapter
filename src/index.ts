@@ -1,1 +1,2 @@
-export * from './useRcTreeAdapter/useRcTreeAdapter'
+export * from './rcTreeAdapter/rcTreeAdapter'
+export * from './RcTree/RcTree'

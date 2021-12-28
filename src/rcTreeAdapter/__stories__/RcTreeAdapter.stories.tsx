@@ -8,11 +8,11 @@ import { data } from '../__mocks__/data.mock'
 
 import { default as RCTree } from 'rc-tree'
 
-import mdx from './UseRcTreeAdapter.docs.mdx'
-import './UseRcTreeAdapterStories.css'
-import { useRcTreeAdapter } from '@/useRcTreeAdapter/useRcTreeAdapter'
+import mdx from './RcTreeAdapter.docs.mdx'
+import './RcTreeAdapterStories.css'
+import { rcTreeAdapter } from '@/rcTreeAdapter/rcTreeAdapter'
 
-const cnUseRcTreeAdapterStories = cn('UseRcTreeAdapterStories')
+const cnRcTreeAdapterStories = cn('RcTreeAdapterStories')
 
 const defaultKnobs = () => ({
   size: select('size', ['s', 'm'], 's'),
@@ -24,13 +24,13 @@ const defaultKnobs = () => ({
 export function Playground() {
   const { defaultExpandAll, showIcon, size, checkable } = defaultKnobs()
 
-  const treeProps = useRcTreeAdapter({
+  const treeProps = rcTreeAdapter({
     showIcon,
     size,
   })
 
   return (
-    <div className={cnUseRcTreeAdapterStories()}>
+    <div className={cnRcTreeAdapterStories()}>
       <RCTree
         {...treeProps}
         height={150}
@@ -43,8 +43,8 @@ export function Playground() {
 }
 
 export default createMetadata({
-  title: 'Hooks|/useRcTreeAdapter',
-  id: 'hooks/useRcTreeAdapter',
+  title: 'Utils|/rcTreeAdapter',
+  id: 'Utils/rcTreeAdapter',
   parameters: {
     docs: {
       page: mdx,

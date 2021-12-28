@@ -1,0 +1,34 @@
+import { Meta } from '@storybook/addon-docs/blocks'
+import { RcTreeExample } from './examples/RcTreeExample/RcTreeExample'
+
+<Meta title="Utils/RcTree" id="RcTree" />
+
+# RcTable
+
+```tsx
+import { cnRcTree } from '@consta/rc-table-adapter/rcTree'
+```
+
+Этот миксин необходим для стилизации RcTree.
+
+## Свойства
+
+| Параметры    | Тип        | По умолчанию | Описание           |
+| ------------ | ---------- | ------------ | ------------------ |
+| `size?`      | `'s', 'm'` | `s`          | Размер дерева      |
+| `prefixCls?` | `string`   | -            | Префикс для дерева |
+
+## Пример
+
+```tsx
+const Example = () => {
+  const prefix = cnRcTree({
+    size: 's',
+    prefixCls: 'CustomTree',
+  })
+
+  return <RCTree treeData={data} prefixCls={prefix} defaultExpandAll />
+}
+```
+
+<RcTreeExample />
