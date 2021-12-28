@@ -1,4 +1,4 @@
-# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | Tree
+# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | useRcTreeAdapter
 
 Это компонент Tree для дизайн-системы Consta: дерево, подходит для создания иерархических структур. Компонент взят из библиотеки [rc-tree](https://github.com/react-component/tree) и адаптирован для [дизайн-системы Consta](https://consta.gazprom-neft.ru/).
 
@@ -8,10 +8,10 @@
 
 ```sh
 # NPM
-$ npm install @consta/tree
+$ npm install @consta/rc-tree-adapter
 
 # Yarn
-$ yarn add @consta/tree
+$ yarn add @consta/rc-tree-adapter
 ```
 
 ## Подключите зависимости
@@ -24,7 +24,8 @@ $ yarn add @consta/tree
 
 ```js
 import { Theme, presetGpnDefault } from '@consta/uikit/Theme'
-import { Tree } from '@consta/tree'
+import { default as RCTree } from 'rc-tree'
+import { useRcTreeAdapter } from '@consta/rc-tree-adapter/useRcTreeAdapter'
 
 const data = [
   {
@@ -53,7 +54,9 @@ const data = [
 ]
 
 const App = () => {
-  return <Tree treeData={data} defaultExpandAll prefixCls={''} />
+  const treeProps = useRcTreeAdapter({ treeData: data, defaultExpandAll: true })
+
+  return <RCTree {...treeProps} />
 }
 ```
 

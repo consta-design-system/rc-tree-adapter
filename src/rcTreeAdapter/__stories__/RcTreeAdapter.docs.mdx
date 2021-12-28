@@ -1,14 +1,14 @@
-import { TreeExample } from './examples/TreeExample/TreeExample'
+import { RcTreeAdapterExample } from './examples/RcTreeAdapterExample/RcTreeAdapterExample'
 
 import {
   RemadeInfo,
   RemadeTableInfo,
 } from '@/__private__/storybook/components/RemadeInfo/RemadeInfo'
 
-# Tree
+# rcTreeAdapter
 
 ```tsx
-import { Tree } from '@consta/tree'
+import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter'
 ```
 
 Дерево, подходит для создания иерархических структур,
@@ -69,15 +69,19 @@ const data = [
 Укажите префикс для CSS-классов в свойстве `prefixCls` (это обязательно). Если префикс не нужен, поставьте `prefixCls={''}`.
 
 ```tsx
-<Tree treeData={data} defaultExpandAll prefixCls={''} />
+export function RcTreeAdapterStoriesExample() {
+  const treeProps = rcTreeAdapter()
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll />
+}
 ```
 
-<TreeExample />
+<RcTreeAdapterExample />
 
 ## Импорт
 
 ```tsx
-import { Tree } from '@consta/tree'
+import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter'
 ```
 
 ## Свойства

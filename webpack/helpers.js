@@ -38,7 +38,7 @@ module.exports = {
     // })
 
     config.module.rules.push({
-      test: /(\/|\\)(src|\.storybook)(\/|\\)[\w/\\.-]*\.mdx$/,
+      test: /\.docs\.mdx$/,
       use: [
         {
           loader: 'babel-loader',
@@ -56,7 +56,7 @@ module.exports = {
     })
 
     config.module.rules.push({
-      test: /(\/|\\)docs(\/|\\)[\w/\\.-]*\.mdx$/,
+      test: /\.stories\.mdx$/,
       use: [
         {
           loader: 'babel-loader',
@@ -69,6 +69,25 @@ module.exports = {
           options: {
             remarkPlugins: [remarkSlug, remarkExternalLinks],
             compilers: [createCompiler({})],
+          },
+        },
+      ],
+    })
+
+    config.module.rules.push({
+      test: /(stories)\/(.*)\.tsx?$/,
+      loader: require.resolve('@storybook/source-loader'),
+      exclude: [/node_modules/],
+      enforce: 'pre',
+    })
+
+    config.module.rules.push({
+      test: /(\/|\\)docs(\/|\\)[\w/\\.-]*\.tsx?$/,
+      use: [
+        {
+          loader: 'babel-loader',
+          options: {
+            presets: ['@babel/preset-react'],
           },
         },
       ],
