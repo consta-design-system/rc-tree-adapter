@@ -10,7 +10,7 @@ export const rcTreeAdapter: RcTreeAdapter = props => {
 
   return {
     switcherIcon: switcherIcon || <IconArrowRight size={size} />,
-    prefixCls: cnRcTree({ size, prefixCls }),
+    prefixCls: cnRcTree({ size }, [prefixCls]),
     showIcon,
   }
 }

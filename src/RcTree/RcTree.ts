@@ -5,13 +5,12 @@ export const cnTree = cn('RcTree')
 
 type RcTreeProps = {
   size?: 'm' | 's'
-  prefixCls?: string
 }
 
-export const cnRcTree = (props?: RcTreeProps) => {
+export const cnRcTree = (props?: RcTreeProps, classNames?: Array<string | undefined>) => {
   const params = props || ({} as RcTreeProps)
-  const { size = 's', prefixCls } = params
-  return cnTree({ size: size || 's' }, [prefixCls])
+  const { size = 's' } = params
+  return cnTree({ size: size || 's' }, classNames)
     .split(' ')
     .reverse()
     .join(' ')
