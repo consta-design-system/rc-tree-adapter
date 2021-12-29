@@ -1,6 +1,6 @@
-# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | useRcTreeAdapter
+# [Дизайн-система Consta](http://consta.gazprom-neft.ru/) | rcTreeAdapter
 
-Это компонент Tree для дизайн-системы Consta: дерево, подходит для создания иерархических структур. Компонент взят из библиотеки [rc-tree](https://github.com/react-component/tree) и адаптирован для [дизайн-системы Consta](https://consta.gazprom-neft.ru/).
+Этот адаптер стилизует дерево [rc-tree](https://github.com/react-component/tree) для [дизайн-системы Consta](https://consta.gazprom-neft.ru/).
 
 # Как использовать
 
