@@ -1,3 +1,7 @@
 import { withNaming } from '@bem-react/classname'
 
-export const cn = withNaming({ n: 'cw--', e: '-', m: '_' })
+const reactBemNaming = { e: '-', m: '_', v: '_' }
+
+export const cn = withNaming(reactBemNaming)
+
+export const withPrefix = (prefix: string) => withNaming({ n: `${prefix}--`, ...reactBemNaming })

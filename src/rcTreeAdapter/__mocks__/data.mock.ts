@@ -1,8 +1,4 @@
-import React from 'react'
-
-import { Tree } from '../../../Tree'
-
-const data = [
+export const data = [
   {
     key: '0-0',
     title: 'Ветка 1',
@@ -27,7 +23,3 @@ const data = [
     ],
   },
 ]
-
-export function TreeExample() {
-  return <Tree treeData={data} defaultExpandAll />
-}
