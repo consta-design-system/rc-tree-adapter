@@ -1,4 +1,10 @@
-import { RcTreeAdapterExample } from './examples/RcTreeAdapterExample/RcTreeAdapterExample'
+import {
+  RcTreeAdapterExample,
+  RcTreeAdapterExampleStyles,
+  RcTreeAdapterExampleCheckable,
+  RcTreeAdapterExampleHeight,
+  RcTreeAdapterExampleIcon,
+} from './examples/RcTreeAdapterExample/RcTreeAdapterExample'
 
 import {
   RemadeInfo,
@@ -11,16 +17,14 @@ import {
 import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter'
 ```
 
-Дерево, подходит для создания иерархических структур,
-например, каталога файлов, разложенных по папкам.
-
-<RemadeInfo
-  commponentName="Tree"
-  apiUrl="https://github.com/react-component/tree"
-  libraryName="rc-tree"
-/>
+Этот адаптер стилизует дерево [rc-tree](https://github.com/react-component/tree) для [дизайн-системы Consta](https://consta.gazprom-neft.ru/)
 
 - [Дерево](#дерево)
+- [Внешний вид](#внешний-вид)
+  - [Размер](#размер)
+  - [Высота](#высота)
+  - [С иконкой](#с-иконкой)
+  - [С чекбоксом](#с-чекбоксом)
 - [Импорт](#импорт)
 - [Список свойств](#свойства)
 
@@ -69,6 +73,12 @@ const data = [
 Укажите префикс для CSS-классов в свойстве `prefixCls` (это обязательно). Если префикс не нужен, поставьте `prefixCls={''}`.
 
 ```tsx
+import React from 'react'
+
+import { rcTreeAdapter } from '@/rcTreeAdapter/rcTreeAdapter'
+import { default as RCTree } from 'rc-tree'
+import { data } from '@/rcTreeAdapter/__mocks__/data.mock'
+
 export function RcTreeAdapterStoriesExample() {
   const treeProps = rcTreeAdapter()
 
@@ -77,6 +87,68 @@ export function RcTreeAdapterStoriesExample() {
 ```
 
 <RcTreeAdapterExample />
+
+## Внешний вид
+
+### Размер
+
+Вы можете поменять размер таблицы — так же, как в [миксине `RcTree`](?path=/docs/rctree--page).
+
+##### Пример с изменением размера
+
+Возьмём таблицу из предыдущего примера и поменяем размер:
+
+```tsx
+export function RcTreeAdapterExampleStyles() {
+  const treeProps = rcTreeAdapter({ size: 'm' })
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll />
+}
+```
+
+<RcTreeAdapterExampleStyles />
+
+### Высота
+
+За высоту дерева отвечает свойство `height`. Укажите в нём высоту в пикселях. Если дерево не поместится, появится прокрутка.
+
+```tsx
+export function RcTreeAdapterExampleHeight() {
+  const treeProps = rcTreeAdapter()
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll height={100} />
+}
+```
+
+<RcTreeAdapterExampleHeight />
+
+### С иконкой
+
+Чтобы показать иконку рядом с веткой, добавьте `showIcon`.
+
+```tsx
+export function RcTreeAdapterExampleIcon() {
+  const treeProps = rcTreeAdapter()
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll height={100} showIcon />
+}
+```
+
+<RcTreeAdapterExampleIcon />
+
+### С чекбоксом
+
+Чтобы добавить рядом с веткой чекбокс, добавьте `checkable`.
+
+```tsx
+export function RcTreeAdapterExampleCheckable() {
+  const treeProps = rcTreeAdapter()
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll checkable />
+}
+```
+
+<RcTreeAdapterExampleCheckable />
 
 ## Импорт
 
@@ -88,12 +160,15 @@ import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter'
 
 <RemadeTableInfo apiUrl="https://github.com/react-component/tree" />
 
-| Свойство                          | Тип и значения | По умолчанию | Описание                            |
-| --------------------------------- | -------------- | ------------ | ----------------------------------- |
-| [`dataTree`](#дерево)             | `Data[]`       | -            | Объект с данными для дерева         |
-| [`defaultExpandAll?`](#дерево)    | `bool`         | -            | Раскрывает все ветки                |
-| [`defaultExpandedKeys?`](#дерево) | `object`       | -            | Раскрывает ветки по идентификаторам |
-| [`prefixCls`](#дерево)            | `string`       | 'rc-tree'    | Префикс для CSS-классов             |
+| Свойство                          | Тип и значения | По умолчанию | Описание                               |
+| --------------------------------- | -------------- | ------------ | -------------------------------------- |
+| [`dataTree`](#дерево)             | `Data[]`       | -            | Объект с данными для дерева            |
+| [`defaultExpandAll?`](#дерево)    | `bool`         | -            | Раскрывает все ветки                   |
+| [`defaultExpandedKeys?`](#дерево) | `object`       | -            | Раскрывает ветки по идентификаторам    |
+| [`checkable?`](#с-чекбоксом)      | `bool`         | -            | Показывает чекбокс рядом с веткой      |
+| [`showIcon?`](#с-иконкой)         | `bool`         | -            | Показывает иконку рядом с веткой       |
+| [`height?`](#высота)              | `number`       | -            | Высота контейнера с деревом в пикселях |
+| [`prefixCls`](#дерево)            | `string`       | 'rc-tree'    | Префикс для CSS-классов                |
 
 ### Атрибуты веток
 
