@@ -70,8 +70,6 @@ const data = [
 
 Укажите идентификаторы узлов, которые хотите раскрыть, в `defaultExpandedKeys`. Если нужно раскрыть все узлы, добавьте `defaultExpandAll`.
 
-Укажите префикс для CSS-классов в свойстве `prefixCls` (это обязательно). Если префикс не нужен, поставьте `prefixCls={''}`.
-
 ```tsx
 import React from 'react'
 
@@ -92,7 +90,7 @@ export function RcTreeAdapterStoriesExample() {
 
 ### Размер
 
-Вы можете поменять размер таблицы — так же, как в [миксине `RcTree`](?path=/docs/rctree--page).
+Вы можете поменять размер дерева — так же, как в [миксине `RcTree`](?path=/docs/rctree--page).
 
 ##### Пример с изменением размера
 
@@ -168,7 +166,7 @@ import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter'
 | [`checkable?`](#с-чекбоксом)      | `bool`         | -            | Показывает чекбокс рядом с веткой      |
 | [`showIcon?`](#с-иконкой)         | `bool`         | -            | Показывает иконку рядом с веткой       |
 | [`height?`](#высота)              | `number`       | -            | Высота контейнера с деревом в пикселях |
-| [`prefixCls`](#дерево)            | `string`       | 'rc-tree'    | Префикс для CSS-классов                |
+| `prefixCls?`                      | `string`       | 'rc-tree'    | Префикс для CSS-классов                |
 
 ### Атрибуты веток
 

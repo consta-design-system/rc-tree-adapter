@@ -25,7 +25,7 @@ $ yarn add @consta/rc-tree-adapter
 ```js
 import { Theme, presetGpnDefault } from '@consta/uikit/Theme'
 import { default as RCTree } from 'rc-tree'
-import { useRcTreeAdapter } from '@consta/rc-tree-adapter/useRcTreeAdapter'
+import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter'
 
 const data = [
   {
@@ -54,9 +54,28 @@ const data = [
 ]
 
 const App = () => {
-  const treeProps = useRcTreeAdapter({ treeData: data, defaultExpandAll: true })
+  const treeProps = rcTreeAdapter({ size: 's' })
 
-  return <RCTree {...treeProps} />
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll height={100} showIcon />
+}
+```
+
+или так:
+
+```js
+import { Theme, presetGpnDefault } from '@consta/uikit/Theme'
+import { default as RCTree } from 'rc-tree'
+import { cnRcTree } from '@consta/rc-tree-adapter/RcTree'
+
+const Example = () => {
+  const prefix = cnRcTree(
+    {
+      size: 's',
+    },
+    ['CustomTree']
+  )
+
+  return <RCTree treeData={data} prefixCls={prefix} defaultExpandAll />
 }
 ```
 
