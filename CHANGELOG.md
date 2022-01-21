@@ -1,5 +1,11 @@
 # Changelog
 
+## v1.0.1 (21/01/2022)
+- [fix(Checkbox): fix arrow layout (#10)](https://github.com/consta-design-system/rc-tree-adapter/commit/94e452fd22c6ddb6360f64a2c77e04ebb57fcf73) - [@N1MBER](https://github.com/N1MBER)
+- [docs(Docs): update examples on README and also update logo (#9)](https://github.com/consta-design-system/rc-tree-adapter/commit/239c15f14af4ebdb9229c545396bf8297472c711) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v1.0.0 (29/12/2021)
 - [docs(rcTreeAdapter): edit docs (#8)](https://github.com/gazprom-neft/rc-tree-adapter/commit/1cf4521188e745cc043e9d2034e2bbac9bd342da) - [@arhayka](https://github.com/arhayka)
 - [feat(Tree): add thematization (#6)](https://github.com/gazprom-neft/rc-tree-adapter/commit/738d2d264616c7fea5f466fcf55393387b819914) - [@N1MBER](https://github.com/N1MBER)
