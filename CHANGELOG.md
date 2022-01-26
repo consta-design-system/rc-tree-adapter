@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.2 (26/01/2022)
+Готов адаптер для дерева из библиотеки `rc-tree` — добавили нему стилизацию из `Consta`. Можно использовать вместе с другими нашими библиотеками.
+
+---
+
+- [docs(Logo): update logo (#11)](https://github.com/consta-design-system/rc-tree-adapter/commit/1d418d9540cdbc697260c50a6ad6e97f65fb32d5) - [@N1MBER](https://github.com/N1MBER)
+- [chore(workflows): add telegramBot](https://github.com/consta-design-system/rc-tree-adapter/commit/6585e1a5fafd8e0fc65ceb992acaadfa0f596f00) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.0.1 (21/01/2022)
 - [fix(Checkbox): fix arrow layout (#10)](https://github.com/consta-design-system/rc-tree-adapter/commit/94e452fd22c6ddb6360f64a2c77e04ebb57fcf73) - [@N1MBER](https://github.com/N1MBER)
 - [docs(Docs): update examples on README and also update logo (#9)](https://github.com/consta-design-system/rc-tree-adapter/commit/239c15f14af4ebdb9229c545396bf8297472c711) - [@N1MBER](https://github.com/N1MBER)
