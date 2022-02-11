@@ -75,7 +75,18 @@
         no-repeat center;
     }
 
-    &:not(.RcTree-icon__docu) {
+    &.RcTree-icon_loading {
+      background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAG2SURBVHgBrVS9TgJBEP52D00seACIKBV0aEJCwMR4FZ21IUE7eQ7p9QUoLAyE2FgYHuCIImq00FBdRaFnZUUsVGCdnTsMAX+O0y+5/Znd/e6b2Z0R8Itc8YZaG0o5EIaF9lHjq20CfuESjh916KtMEhvwi4f7CqKrFkS/AyETZIkCykQspdduZ1c4rbhAx0tEGsZQ1XFVO5hN4bTiDiluQyJPstJYTNlk6wYn1Hi8eyaX32i0RqQ5LMdP/kY4UhpLpWkUh1rohpDd3oegOISwh7PqE4LBoi8NMTAlhIjyRL2HERQhJqT7kUkJDBM8OT+2ERSfnqmIxD9Dui+esF6MICgyO66XULaEgutqHyaCQqok9wKOdrnpmU0EhcAu9wqWhDFnkaUHfdOcTjOCzyj9Uhy0aw2J1mGPSlLZWy4hs5XwTcax0/nM8iq6dTOFchBLK2FWKY08p5POgN+USUoGXRwAKmO1ujaLiU0lVsnw6t3g1ca190bT9BLmOdYm/5y3UaW5cCvNNKFGtrBJFVkHOYqfQaFCGZdVa9z4fT3UxAhtkAJNPIqrAyVIbb8J48VC67Q3eewD1g2JgaNIVywAAAAASUVORK5CYII=')
+        no-repeat center;
+      background-size: var(--space-s) var(--space-s);
+
+      animation-name: RcTreeIconLoadingRotate;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+    }
+
+    &:not(.RcTree-icon__docu):not(.RcTree-icon_loading) {
       background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxwYXRoIGQ9Ik01IDFDNC40NDc3MiAxIDQgMS40NDc3MiA0IDJMNCAxMEM0IDEwLjU1MjMgNC40NDc3MiAxMSA1IDExTDE1IDExQzE1LjU1MjMgMTEgMTYgMTAuNTUyMyAxNiAxMFYzQzE2IDIuNDQ3NzIgMTUuNTUyMyAyIDE1IDJMOSAyQzkgMS40NDc3MiA4LjU1MjI4IDEgOCAxTDUgMVoiIGZpbGw9IiMwMDM5NUMiIGZpbGwtb3BhY2l0eT0iMC44Ii8+CiAgICA8cGF0aCBkPSJNMyA1SDJDMS40NDc3MiA1IDEgNS40NDc3MiAxIDZMMSAxM0MxIDEzLjU1MjMgMS40NDc3MSAxNCAyIDE0TDEyIDE0QzEyLjU1MjMgMTQgMTMgMTMuNTUyMyAxMyAxM1YxMkw0IDEyQzMuNDQ3NzIgMTIgMyAxMS41NTIzIDMgMTFMMyA1WiIgZmlsbD0iIzAwMzk1QyIgZmlsbC1vcGFjaXR5PSIwLjgiLz4KPC9zdmc+Cg==')
         no-repeat center;
     }
@@ -256,5 +267,15 @@
     display: inline-block;
 
     width: var(--tree-element-size);
+  }
+}
+
+@keyframes RcTreeIconLoadingRotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
