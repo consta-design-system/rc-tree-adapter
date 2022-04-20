@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.0.4 (20/04/2022)
+- [docs(global): replace url (#17)](https://github.com/consta-design-system/rc-tree-adapter/commit/9d7687d2d405de0f6442256400c35b351016c921) - [@arhayka](https://github.com/arhayka)
+- [docs: change links to vercel (#16)](https://github.com/consta-design-system/rc-tree-adapter/commit/297b04b2ab1add45c8404b08401a016bd68058c1) - [@arhayka](https://github.com/arhayka)
+- [chore(deploy): add deploy automatization (#15)](https://github.com/consta-design-system/rc-tree-adapter/commit/8e65a2e628b9b0fc20a2ae08c63349a020039d19) - [@gizeasy](https://github.com/gizeasy)
+- [fix(Favicon): fix favicon (#14)](https://github.com/consta-design-system/rc-tree-adapter/commit/c7d36d857765d2ce3b3fbe123c24e0b3963937ee) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v1.0.3 (16/02/2022)
 - [fix(rcTreeAdapter): fix mistake with unshowing loading icon (#13)](https://github.com/consta-design-system/rc-tree-adapter/commit/77f37156e1005e8bbe1e1422aaa1c412df84e2f4) - [@N1MBER](https://github.com/N1MBER)
 - [docs(common): edit links to github (#12)](https://github.com/consta-design-system/rc-tree-adapter/commit/33ff21f4232e22b569fd04a8c5a7591591e7868e) - [@arhayka](https://github.com/arhayka)
