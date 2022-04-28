@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.5 (28/04/2022)
+- [chore(deploy): update config](https://github.com/consta-design-system/rc-tree-adapter/commit/16a71a6cd8e1fb0044dd7ccba0aa571f98dba4ca) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v1.0.4 (20/04/2022)
 - [docs(global): replace url (#17)](https://github.com/consta-design-system/rc-tree-adapter/commit/9d7687d2d405de0f6442256400c35b351016c921) - [@arhayka](https://github.com/arhayka)
 - [docs: change links to vercel (#16)](https://github.com/consta-design-system/rc-tree-adapter/commit/297b04b2ab1add45c8404b08401a016bd68058c1) - [@arhayka](https://github.com/arhayka)
