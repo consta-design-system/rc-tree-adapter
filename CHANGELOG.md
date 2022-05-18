@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.0.6 (18/05/2022)
+Самое главное:
+- Исправлена проблема с позиционированием галочки в чекбоксе, а также цвета иконок, при переключении темы
+
+---
+
+- [fix(RcTree): fix arrow position and icons colors (#18)](https://github.com/consta-design-system/rc-tree-adapter/commit/6c94abe2276da9f6b659e2259d47b9e3baad3697) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v1.0.5 (28/04/2022)
 - [chore(deploy): update config](https://github.com/consta-design-system/rc-tree-adapter/commit/16a71a6cd8e1fb0044dd7ccba0aa571f98dba4ca) - [@gizeasy](https://github.com/gizeasy)
 
