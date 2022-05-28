@@ -135,7 +135,7 @@
     &::before {
       position: absolute;
       z-index: 2;
-      top: calc(var(--space-m) / 2);
+      top: calc(var(--tree-element-size) / 2);
       left: calc(var(--space-m) / 5);
 
       box-sizing: border-box;

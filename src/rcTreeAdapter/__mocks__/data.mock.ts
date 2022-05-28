@@ -1,4 +1,12 @@
-export const data = [
+export type Node = {
+  key: string
+  title: string
+  visible?: boolean
+  children?: Node[]
+  disableCheckbox?: boolean
+}
+
+export const data: Node[] = [
   {
     key: '0-0',
     title: 'Ветка 1',
