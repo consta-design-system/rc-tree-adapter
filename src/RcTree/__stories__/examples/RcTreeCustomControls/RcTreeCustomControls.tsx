@@ -1,32 +1,16 @@
-import { Meta } from '@storybook/addon-docs/blocks'
-import { RcTreeExample } from './examples/RcTreeExample/RcTreeExample'
-import { RcTreeCustomControls } from './examples/RcTreeCustomControls/RcTreeCustomControls'
-
-<Meta title="Utils/RcTree" id="RcTree" />
-
-# RcTree
-
-```tsx
-import { cnRcTree } from '@consta/rc-table-adapter/rcTree'
-```
-
-С помощью этого миксина можно стилизовать дерево для дизайн-системы Consta.
-
-## Кастомные контролы
-
-Для того чтобы определить свои собственные элементы управления вам необходимо самостоятельно отрисовать
-структуру дерева и в свойстве `title` узла указать необходимую рендер-функцию.
-
-<RcTreeCustomControls />
-
-```tsx
-type Node = {
-  key: string
-  title: string
-  visible?: boolean
-  children?: Node[]
-  disableCheckbox?: boolean
-}
+import React, { useState } from 'react'
+import Tree, { TreeNode } from 'rc-tree'
+import { data, Node as NodeType } from '@/rcTreeAdapter/__mocks__/data.mock'
+import { cnRcTree } from '../../../../RcTree/RcTree'
+import { Button } from '@consta/uikit/Button'
+import { Text } from '@consta/uikit/Text'
+import { IconSettings } from '@consta/uikit/IconSettings'
+import { IconEye } from '@consta/uikit/IconEye'
+import { IconEyeClose } from '@consta/uikit/IconEyeClose'
+import { IconMeatball } from '@consta/uikit/IconMeatball'
+import { useFlag } from '@consta/uikit/useFlag'
+import { cn } from '@/__private__/utils/bem'
+import './RcTreeCustomControls.css'
 
 const changeVisisble = (key: string, nodes: NodeType[]): NodeType[] => {
   return nodes.map(node => {
@@ -106,27 +90,3 @@ export const RcTreeCustomControls = () => {
     </Tree>
   )
 }
-```
-
-## Свойства
-
-| Параметры | Тип        | По умолчанию | Описание      |
-| --------- | ---------- | ------------ | ------------- |
-| `size?`   | `'s', 'm'` | `s`          | Размер дерева |
-
-## Пример
-
-```tsx
-const Example = () => {
-  const prefix = cnRcTree(
-    {
-      size: 's',
-    },
-    ['CustomTree']
-  )
-
-  return <RCTree treeData={data} prefixCls={prefix} defaultExpandAll />
-}
-```
-
-<RcTreeExample />
