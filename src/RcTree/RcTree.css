@@ -231,6 +231,14 @@
       }
     }
 
+    &.RcTree-treenode-selected {
+      & > *:not(:first-child) {
+        font-weight: 600;
+
+        background: var(--color-bg-ghost);
+      }
+    }
+
     &-switcher {
       background-image: none;
 
