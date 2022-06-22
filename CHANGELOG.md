@@ -1,5 +1,10 @@
 # Changelog
 
+## v1.0.8 (22/06/2022)
+- [feat(RcTree): add styles for selected node (#20)](https://github.com/consta-design-system/rc-tree-adapter/commit/866279f72276bd3c5d871550f16ab4bf929dbe07) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v1.0.7 (09/06/2022)
 Самое главное:
 - Добавлены примеры создания кастомных контролов для элементов дерева
