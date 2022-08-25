@@ -1,0 +1,189 @@
+import {
+  RcTreeAdapterExample,
+  RcTreeAdapterExampleStyles,
+  RcTreeAdapterExampleCheckable,
+  RcTreeAdapterExampleHeight,
+  RcTreeAdapterExampleIcon,
+} from './examples/RcTreeAdapterExample/RcTreeAdapterExample';
+
+import {
+  RemadeInfo,
+  RemadeTableInfo,
+} from '../../../stand/components/RemadeInfo/RemadeInfo';
+
+```tsx
+import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter';
+```
+
+Этот адаптер стилизует дерево [rc-tree](https://github.com/react-component/tree) для [дизайн-системы Consta](https://consta.design/).
+
+- [Дерево](#дерево)
+- [Внешний вид](#внешний-вид)
+  - [Размер](#размер)
+  - [Высота](#высота)
+  - [С иконкой](#с-иконкой)
+  - [С чекбоксом](#с-чекбоксом)
+- [Импорт](#импорт)
+- [Список свойств](#свойства)
+
+## Дерево
+
+Создайте объект с описанием дерева:
+
+- `key` — идентификатор ветки,
+- `title` — название ветки,
+- `children` — объект с дочерними элементами (если они есть).
+
+Объекты вкладываются один в другой — так же, как будут вкладываться друг в друга ветки дерева.
+
+```tsx
+const data = [
+  {
+    key: '0-0',
+    title: 'Ветка 1',
+    children: [
+      {
+        key: '0-0-0',
+        title: 'Ветка 1-1',
+        children: [{ key: '0-0-0-0', title: 'Ветка 1-1-0' }],
+      },
+      {
+        key: '0-0-1',
+        title: 'Ветка 1-2',
+        children: [
+          { key: '0-0-1-0', title: 'Ветка 1-2-0', disableCheckbox: true },
+          { key: '0-0-1-1', title: 'Ветка 1-2-1' },
+          { key: '0-0-1-2', title: 'Ветка 1-2-2' },
+          { key: '0-0-1-3', title: 'Ветка 1-2-3' },
+          { key: '0-0-1-4', title: 'Ветка 1-2-4' },
+          { key: '0-0-1-5', title: 'Ветка 1-2-5' },
+          { key: '0-0-1-6', title: 'Ветка 1-2-6' },
+          { key: '0-0-1-7', title: 'Ветка 1-2-7' },
+          { key: '0-0-1-8', title: 'Ветка 1-2-8' },
+          { key: '0-0-1-9', title: 'Ветка 1-2-9' },
+        ],
+      },
+    ],
+  },
+];
+```
+
+Чтобы вывести дерево, передайте в свойстве `treeData` объект с данными.
+
+Укажите идентификаторы узлов, которые хотите раскрыть, в `defaultExpandedKeys`. Если нужно раскрыть все узлы, добавьте `defaultExpandAll`.
+
+```tsx
+import React from 'react';
+
+import { rcTreeAdapter } from '##/adapters/rcTreeAdapter/rcTreeAdapter';
+import { default as RCTree } from 'rc-tree';
+import { data } from '##/adapters/rcTreeAdapter/__mocks__/data.mock';
+
+export function RcTreeAdapterStoriesExample() {
+  const treeProps = rcTreeAdapter();
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll />;
+}
+```
+
+<RcTreeAdapterExample />
+
+## Внешний вид
+
+### Размер
+
+Вы можете поменять размер дерева — так же, как в [миксине `RcTree`](?path=/docs/rctree--page).
+
+##### Пример с изменением размера
+
+Возьмём таблицу из предыдущего примера и поменяем размер:
+
+```tsx
+export function RcTreeAdapterExampleStyles() {
+  const treeProps = rcTreeAdapter({ size: 'm' });
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll />;
+}
+```
+
+<RcTreeAdapterExampleStyles />
+
+### Высота
+
+За высоту дерева отвечает свойство `height`. Укажите в нём высоту в пикселях. Если дерево не поместится, появится прокрутка.
+
+```tsx
+export function RcTreeAdapterExampleHeight() {
+  const treeProps = rcTreeAdapter();
+
+  return (
+    <RCTree {...treeProps} treeData={data} defaultExpandAll height={100} />
+  );
+}
+```
+
+<RcTreeAdapterExampleHeight />
+
+### С иконкой
+
+Чтобы показать иконку рядом с веткой, добавьте `showIcon`.
+
+```tsx
+export function RcTreeAdapterExampleIcon() {
+  const treeProps = rcTreeAdapter();
+
+  return (
+    <RCTree
+      {...treeProps}
+      treeData={data}
+      defaultExpandAll
+      height={100}
+      showIcon
+    />
+  );
+}
+```
+
+<RcTreeAdapterExampleIcon />
+
+### С чекбоксом
+
+Чтобы добавить рядом с веткой чекбокс, добавьте `checkable`.
+
+```tsx
+export function RcTreeAdapterExampleCheckable() {
+  const treeProps = rcTreeAdapter();
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll checkable />;
+}
+```
+
+<RcTreeAdapterExampleCheckable />
+
+## Импорт
+
+```tsx
+import { rcTreeAdapter } from '@consta/rc-tree-adapter/rcTreeAdapter';
+```
+
+## Свойства
+
+<RemadeTableInfo apiUrl="https://github.com/react-component/tree" />
+
+| Свойство                          | Тип и значения | По умолчанию | Описание                               |
+| --------------------------------- | -------------- | ------------ | -------------------------------------- |
+| [`treeData`](#дерево)             | `Data[]`       | -            | Объект с данными для дерева            |
+| [`defaultExpandAll?`](#дерево)    | `bool`         | -            | Раскрывает все ветки                   |
+| [`defaultExpandedKeys?`](#дерево) | `object`       | -            | Раскрывает ветки по идентификаторам    |
+| [`checkable?`](#с-чекбоксом)      | `bool`         | -            | Показывает чекбокс рядом с веткой      |
+| [`showIcon?`](#с-иконкой)         | `bool`         | -            | Показывает иконку рядом с веткой       |
+| [`height?`](#высота)              | `number`       | -            | Высота контейнера с деревом в пикселях |
+| `prefixCls?`                      | `string`       | 'rc-tree'    | Префикс для CSS-классов                |
+
+### Атрибуты веток
+
+| Свойство              | Тип и значения | По умолчанию | Описание                       |
+| --------------------- | -------------- | ------------ | ------------------------------ |
+| [`key`](#дерево)      | `string`       | -            | Уникальный идентификатор ветки |
+| [`title`](#дерево)    | `string`       | -            | Название ветки                 |
+| [`children`](#дерево) | `object`       | -            | Объект с дочерними элементами  |
