@@ -1,7 +1,7 @@
 import { IconArrowRight } from '@consta/uikit/IconArrowRight';
 import React from 'react';
 
-import { cnRcTree } from '##/components/RcTree/RcTree';
+import { cnRcTree } from '##/mixs/RcTree/RcTree';
 
 import { RcTreeAdapter, RcTreeAdapterProps } from './helper';
 

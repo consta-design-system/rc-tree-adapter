@@ -4,8 +4,8 @@ import image from './ConstaImage.png';
 
 const groups = [
   {
-    title: 'Компоненты',
-    id: 'components',
+    title: 'Миксины',
+    id: 'mixs',
   },
   {
     title: 'Адаптеры',
