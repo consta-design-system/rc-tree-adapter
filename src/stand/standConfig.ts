@@ -4,6 +4,10 @@ import image from './ConstaImage.png';
 
 const groups = [
   {
+    title: 'Документация',
+    id: 'docs',
+  },
+  {
     title: 'Миксины',
     id: 'mixs',
   },
@@ -20,5 +24,5 @@ export const { createStand } = createConfig({
   group: 'Адаптеры',
   image,
   description:
-    '[тут описание что это такое] Ультра топчик библиотеки с пацанскими кнопками и графиками, качай.',
+    'Адаптер для дерева из библиотеки rc-tree. Подходит для создания иерархических структур.',
 });
