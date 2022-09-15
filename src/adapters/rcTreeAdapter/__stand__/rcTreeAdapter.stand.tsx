@@ -6,5 +6,6 @@ export default createStand({
   group: 'adapters',
   description: 'Этот адаптер стилизует дерево.',
   version: '1.0.8',
+  sandbox: 'rctreeadapter-juyg0i',
   status: 'stable',
 });

@@ -6,5 +6,6 @@ export default createStand({
   group: 'mixs',
   description: 'Этот миксин стилизует дерево.',
   version: '1.0.8',
+  sandbox: 'cnrctree-5g7840',
   status: 'stable',
 });
