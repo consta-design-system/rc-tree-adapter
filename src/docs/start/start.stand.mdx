@@ -1,0 +1,18 @@
+Этот адаптер стилизует дерево из библиотеки [rc-tree](https://github.com/react-component/tree) для дизайн-системы Consta. [Посмотреть на GitHub](https://github.com/consta-design-system/rc-tree-adapter)
+
+## Как создать стилизованное дерево
+
+- Подключите миксин [RcTree](##LIBS.STAND/stand:rc-tree-adapter-mixs-rctree-stable) — он добавит дереву стили из Consta.
+- Подключите адаптер [rcTreeAdapter](##LIBS.STAND/stand:rc-tree-adapter-adapters-rctreeadapter-stable), чтобы добавить стили и значения по умолчанию для некоторых свойств.
+
+## Быстрый старт
+
+#### Установите пакет и зависимости
+
+`yarn add @consta/uikit @consta/rc-tree-adapter` или `npm install @consta/uikit @consta/rc-tree-adapter`
+
+#### Подключите тему
+
+Тему обязательно нужно подключать в корне приложения, так, чтобы все компоненты `@consta/rc-tree-adapter` были вложены в компонент `Theme`.
+
+#### Всë!

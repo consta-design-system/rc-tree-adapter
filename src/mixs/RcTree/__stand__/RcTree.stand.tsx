@@ -4,8 +4,8 @@ export default createStand({
   title: 'RcTree',
   id: 'RcTree',
   group: 'mixs',
-  description: 'Этот миксин стилизует дерево.',
+  description: 'Миксин для стилизации дерева.',
   version: '1.0.8',
-  sandbox: 'cnrctree-5g7840',
   status: 'stable',
+  sandbox: 'cnrctree-5g7840',
 });
