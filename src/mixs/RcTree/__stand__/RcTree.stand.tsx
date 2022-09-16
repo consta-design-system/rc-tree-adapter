@@ -7,4 +7,5 @@ export default createStand({
   description: 'Миксин для стилизации дерева.',
   version: '1.0.8',
   status: 'stable',
+  sandbox: 'cnrctree-5g7840',
 });
