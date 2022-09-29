@@ -1,5 +1,21 @@
 # Changelog
 
+## v2.0.0 (29/09/2022)
+Самое важное:
+Выкладываем новый стенд и сборщик.
+
+Добавили песочницу: теперь в ней можно смотреть примеры компонентов.
+
+⚠️ Внимание: изменилась структура экспорта компонетов
+
+---
+
+- [chore(stand): new stand and new builder (#21)](https://github.com/consta-design-system/rc-tree-adapter/commit/55c07cdffdf5aa8def4f65b12b955efd73d11b84) - [@gizeasy](https://github.com/gizeasy)
+- [chore(stand): add automation publish stand](https://github.com/consta-design-system/rc-tree-adapter/commit/c4ef67888b448c68a4bfea7fc71761a6f9f6ddff) - [@gizeasy](https://github.com/gizeasy)
+
+
+--------------------
+
 ## v1.0.8 (22/06/2022)
 - [feat(RcTree): add styles for selected node (#20)](https://github.com/consta-design-system/rc-tree-adapter/commit/866279f72276bd3c5d871550f16ab4bf929dbe07) - [@N1MBER](https://github.com/N1MBER)
 
@@ -7,7 +23,7 @@
 
 ## v1.0.7 (09/06/2022)
 Самое главное:
-- Добавлены примеры создания кастомных контролов для элементов дерева
+* Добавлены примеры создания кастомных контролов для элементов дерева
 
 ---
 
