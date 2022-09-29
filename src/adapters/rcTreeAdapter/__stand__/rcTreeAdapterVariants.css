@@ -1,0 +1,14 @@
+.rcTreeAdapterVariants {
+  width: 100%;
+  height: 80vh;
+
+  & .RcTree {
+    overflow: auto;
+    height: 100vh;
+    max-height: 100%;
+
+    &-list-holder {
+      max-height: 100vh !important;
+    }
+  }
+}

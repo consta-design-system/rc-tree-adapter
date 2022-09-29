@@ -1,0 +1,96 @@
+<svg
+  width="200"
+  height="120"
+  viewBox="0 0 200 120"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g clip-path="url(#clip0_2090_16013)">
+    <rect width="200" height="120" rx="4" fill="var(--color-bg-secondary)" />
+    <g clip-path="url(#clip1_2090_16013)">
+      <rect
+        x="25"
+        y="10"
+        width="151"
+        height="100"
+        rx="4"
+        fill="var(--color-bg-default)"
+      />
+      <rect
+        x="25"
+        y="10"
+        width="151"
+        height="100"
+        fill="var(--color-bg-default)"
+      />
+    </g>
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M43.9789 52.5L37.9998 46.5572L39.0635 45.5L43.9789 50.3856L48.8944 45.5L49.958 46.5572L43.9789 52.5Z"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.3"
+    />
+    <rect
+      x="61.958"
+      y="45.5"
+      width="99.0418"
+      height="7"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.35"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M61.9789 74.5L55.9998 68.5572L57.0635 67.5L61.9789 72.3856L66.8944 67.5L67.958 68.5572L61.9789 74.5Z"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.3"
+    />
+    <rect
+      x="79.958"
+      y="67.5"
+      width="81.0418"
+      height="7"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.35"
+    />
+    <rect
+      x="94"
+      y="89.5"
+      width="67"
+      height="7"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.35"
+    />
+    <path
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      d="M45 27.0001L39.0572 32.9792L38 31.9155L42.8856 27.0001L38 22.0846L39.0572 21.021L45 27.0001Z"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.3"
+    />
+    <rect
+      x="62"
+      y="23.5"
+      width="99"
+      height="7"
+      fill="var(--color-control-typo-placeholder)"
+      fill-opacity="0.35"
+    />
+  </g>
+  <defs>
+    <clipPath id="clip0_2090_16013">
+      <rect width="200" height="120" rx="3" fill="var(--color-bg-default)" />
+    </clipPath>
+    <clipPath id="clip1_2090_16013">
+      <rect
+        x="25"
+        y="10"
+        width="151"
+        height="100"
+        rx="4"
+        fill="var(--color-bg-default)"
+      />
+    </clipPath>
+  </defs>
+</svg>
