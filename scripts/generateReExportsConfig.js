@@ -1,7 +1,7 @@
 module.exports = {
   src: './src',
   distPath: './dist',
-  reexports: ['/components', '/adapters'],
+  reexports: ['/mixs', '/adapters'],
   ignore: [
     'src/**/*.stories/**',
     'src/**/*.stories.*',
