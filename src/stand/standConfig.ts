@@ -2,25 +2,24 @@ import { createConfig } from '@consta/stand';
 
 import image from './ConstaImage.png';
 
-const groups = [
-  {
-    title: 'Документация',
-    id: 'docs',
-  },
-  {
-    title: 'Миксины',
-    id: 'mixs',
-  },
-  {
-    title: 'Адаптеры',
-    id: 'adapters',
-  },
-] as const;
-
 export const { createStand } = createConfig({
   title: 'Consta rc-tree-adapter',
   id: 'rc-tree-adapter',
-  groups,
+  groups: [
+    {
+      title: 'Документация',
+      id: 'docs',
+    },
+    {
+      title: 'Миксины',
+      id: 'mixs',
+    },
+    {
+      title: 'Адаптеры',
+      id: 'adapters',
+      view: 'card',
+    },
+  ],
   group: 'Адаптеры',
   image,
   description:
