@@ -9,15 +9,18 @@ export const { createStand } = createConfig({
     {
       title: 'Документация',
       id: 'docs',
+      initialOpen: true,
     },
     {
       title: 'Миксины',
       id: 'mixs',
+      initialOpen: true,
     },
     {
       title: 'Адаптеры',
       id: 'adapters',
       view: 'card',
+      initialOpen: true,
     },
   ],
   group: 'Адаптеры',
