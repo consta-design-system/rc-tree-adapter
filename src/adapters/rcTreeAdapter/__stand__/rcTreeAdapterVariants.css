@@ -1,8 +1,8 @@
-.rcTreeAdapterVariants {
+.rctr--rcTreeAdapterVariants {
   width: 100%;
   height: 80vh;
 
-  & .RcTree {
+  & .rctr--RcTree {
     overflow: auto;
     height: 100vh;
     max-height: 100%;

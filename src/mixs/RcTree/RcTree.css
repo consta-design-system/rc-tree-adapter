@@ -1,4 +1,4 @@
-.RcTree {
+.rctr--RcTree {
   --tree-font-size: var(--size-text-xs);
   --tree-line-height: 1.3em;
   --tree-element-size: var(--space-m);
@@ -63,14 +63,14 @@
     width: var(--tree-element-size);
     height: var(--tree-element-size);
 
-    &.RcTree-icon__docu {
+    &.rctr--RcTree-icon__docu {
       width: var(--space-m);
       height: var(--space-m);
       background: var(--color-control-typo-ghost);
       mask-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgY2xpcC1wYXRoPSJ1cmwoI2NsaXAwXzc2NF81MDgwMykiPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE0IDUuNDE0MjFDMTQgNS4wMTYzOSAxMy44NDE5IDQuNjM0ODYgMTMuNTYwNiA0LjM1MzU2TDkuNjQ2NDIgMC40MzkzMzZDOS4zNjUxMiAwLjE1ODAyOSA4Ljk4MzU5IC03LjYyOTM5ZS0wNiA4LjU4NTc2IC03LjYyOTM5ZS0wNkwzIC0xLjQzMDUxZS0wNkMyLjQ0NzcyIC0xLjQzMDUxZS0wNiAyIDAuNDQ3NzE0IDIgMC45OTk5OTlMMiAxNEMyIDE0LjU1MjMgMi40NDc3MiAxNSAzIDE1TDEzIDE1QzEzLjU1MjMgMTUgMTQgMTQuNTUyMyAxNCAxNEwxNCA2QzE0IDUuOTk2OTEgMTQgNS45OTM4MyAxNCA1Ljk5MDc2VjUuNDE0MjFaTTEyLjc5MjggNUg5LjVDOS4yMjM4NiA1IDkgNC43NzYxNCA5IDQuNVYxLjIwNzEzTDEyLjc5MjggNVoiIGZpbGw9IiMwMDM5NUMiLz4KPC9nPgo8ZGVmcz4KPGNsaXBQYXRoIGlkPSJjbGlwMF83NjRfNTA4MDMiPgo8cmVjdCB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIGZpbGw9IndoaXRlIi8+CjwvY2xpcFBhdGg+CjwvZGVmcz4KPC9zdmc+Cg==');
     }
 
-    &.RcTree-icon_loading {
+    &.rctr--RcTree-icon_loading {
       width: var(--space-s);
       height: var(--space-s);
       background: var(--color-control-typo-ghost);
@@ -82,7 +82,7 @@
       mask-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTIiIGhlaWdodD0iMTIiIHZpZXdCb3g9IjAgMCAxMiAxMiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPG1hc2sgaWQ9InBhdGgtMS1pbnNpZGUtMV82MDAwMF8xMjE4MzgiIGZpbGw9IndoaXRlIj4KPHBhdGggZD0iTTYgMEM3LjI2NzA4IDEuNTEwOTdlLTA4IDguNTAxNjMgMC40MDExMyA5LjUyNjcxIDEuMTQ1OUMxMC41NTE4IDEuODkwNjcgMTEuMzE0OCAyLjk0MDg0IDExLjcwNjMgNC4xNDU5QzEyLjA5NzkgNS4zNTA5NiAxMi4wOTc5IDYuNjQ5MDQgMTEuNzA2MyA3Ljg1NDFDMTEuMzE0OCA5LjA1OTE2IDEwLjU1MTggMTAuMTA5MyA5LjUyNjcxIDEwLjg1NDFDOC41MDE2MyAxMS41OTg5IDcuMjY3MDggMTIgNiAxMkM0LjczMjkyIDEyIDMuNDk4MzcgMTEuNTk4OSAyLjQ3MzI5IDEwLjg1NDFDMS40NDgyIDEwLjEwOTMgMC42ODUyMDggOS4wNTkxNiAwLjI5MzY2MSA3Ljg1NDFDLTAuMDk3ODg3MSA2LjY0OTA0IC0wLjA5Nzg4NjkgNS4zNTA5NiAwLjI5MzY2MSA0LjE0NTlMMi4xNzY3NSA0Ljc1Nzc1QzEuOTE0NDIgNS41NjUxNCAxLjkxNDQyIDYuNDM0ODYgMi4xNzY3NSA3LjI0MjI1QzIuNDM5MDkgOC4wNDk2NCAyLjk1MDMgOC43NTMyNSAzLjYzNzEgOS4yNTIyNUM0LjMyMzkxIDkuNzUxMjQgNS4xNTEwNiAxMC4wMiA2IDEwLjAyQzYuODQ4OTQgMTAuMDIgNy42NzYwOSA5Ljc1MTI0IDguMzYyOSA5LjI1MjI1QzkuMDQ5NyA4Ljc1MzI1IDkuNTYwOTEgOC4wNDk2NCA5LjgyMzI1IDcuMjQyMjVDMTAuMDg1NiA2LjQzNDg2IDEwLjA4NTYgNS41NjUxNCA5LjgyMzI1IDQuNzU3NzVDOS41NjA5MSAzLjk1MDM2IDkuMDQ5NyAzLjI0Njc1IDguMzYyOSAyLjc0Nzc1QzcuNjc2MDkgMi4yNDg3NiA2Ljg0ODk0IDEuOTggNiAxLjk4VjBaIi8+CjwvbWFzaz4KPHBhdGggZD0iTTYgMEM3LjI2NzA4IDEuNTEwOTdlLTA4IDguNTAxNjMgMC40MDExMyA5LjUyNjcxIDEuMTQ1OUMxMC41NTE4IDEuODkwNjcgMTEuMzE0OCAyLjk0MDg0IDExLjcwNjMgNC4xNDU5QzEyLjA5NzkgNS4zNTA5NiAxMi4wOTc5IDYuNjQ5MDQgMTEuNzA2MyA3Ljg1NDFDMTEuMzE0OCA5LjA1OTE2IDEwLjU1MTggMTAuMTA5MyA5LjUyNjcxIDEwLjg1NDFDOC41MDE2MyAxMS41OTg5IDcuMjY3MDggMTIgNiAxMkM0LjczMjkyIDEyIDMuNDk4MzcgMTEuNTk4OSAyLjQ3MzI5IDEwLjg1NDFDMS40NDgyIDEwLjEwOTMgMC42ODUyMDggOS4wNTkxNiAwLjI5MzY2MSA3Ljg1NDFDLTAuMDk3ODg3MSA2LjY0OTA0IC0wLjA5Nzg4NjkgNS4zNTA5NiAwLjI5MzY2MSA0LjE0NTlMMi4xNzY3NSA0Ljc1Nzc1QzEuOTE0NDIgNS41NjUxNCAxLjkxNDQyIDYuNDM0ODYgMi4xNzY3NSA3LjI0MjI1QzIuNDM5MDkgOC4wNDk2NCAyLjk1MDMgOC43NTMyNSAzLjYzNzEgOS4yNTIyNUM0LjMyMzkxIDkuNzUxMjQgNS4xNTEwNiAxMC4wMiA2IDEwLjAyQzYuODQ4OTQgMTAuMDIgNy42NzYwOSA5Ljc1MTI0IDguMzYyOSA5LjI1MjI1QzkuMDQ5NyA4Ljc1MzI1IDkuNTYwOTEgOC4wNDk2NCA5LjgyMzI1IDcuMjQyMjVDMTAuMDg1NiA2LjQzNDg2IDEwLjA4NTYgNS41NjUxNCA5LjgyMzI1IDQuNzU3NzVDOS41NjA5MSAzLjk1MDM2IDkuMDQ5NyAzLjI0Njc1IDguMzYyOSAyLjc0Nzc1QzcuNjc2MDkgMi4yNDg3NiA2Ljg0ODk0IDEuOTggNiAxLjk4VjBaIiBzdHJva2U9IiMwMDM5NUMiIHN0cm9rZS1vcGFjaXR5PSIwLjgiIHN0cm9rZS13aWR0aD0iMiIgbWFzaz0idXJsKCNwYXRoLTEtaW5zaWRlLTFfNjAwMDBfMTIxODM4KSIvPgo8L3N2Zz4KCg==');
     }
 
-    &:not(.RcTree-icon__docu):not(.RcTree-icon_loading) {
+    &:not(.rctr--RcTree-icon__docu):not(.rctr--RcTree-icon_loading) {
       width: var(--space-m);
       height: var(--space-m);
       background: var(--color-control-typo-ghost);
@@ -204,7 +204,7 @@
       }
     }
 
-    &.RcTree-treenode-selected {
+    &.rctr--RcTree-treenode-selected {
       & > *:not(:first-child) {
         background: var(--color-bg-ghost);
         font-weight: 600;
@@ -214,7 +214,7 @@
     &-switcher {
       background-image: none;
 
-      &-open .RcTree-switcher_open > * {
+      &-open .rctr--RcTree-switcher_open > * {
         transform: rotate(90deg);
       }
     }
