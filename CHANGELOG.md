@@ -1,18 +1,18 @@
 # Changelog
 
+## v2.0.1 (30/11/2022)
+- [fix(prefix): add prefix for class names (#30)](https://github.com/consta-design-system/rc-tree-adapter/commit/a103f7060ebc1ae3bdfb9d786415fd1373a7ccc0) - [@N1MBER](https://github.com/N1MBER)
+- [docs(portal): readme, stand, version (#29)](https://github.com/consta-design-system/rc-tree-adapter/commit/ff991842a75f7c6f15692ebf6f8d5e5bce06c3e9) - [@arhayka](https://github.com/arhayka)
+- [docs: readme, links, and menu (#28)](https://github.com/consta-design-system/rc-tree-adapter/commit/733e0a80fd6cd9b9df9f530a9a01e5bb817d15aa) - [@arhayka](https://github.com/arhayka)
+- [chore(deps): update @consta/uikit](https://github.com/consta-design-system/rc-tree-adapter/commit/6d77975de15ca6a2a8780d914c6f708539412b01) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v2.0.0 (29/09/2022)
-Самое важное:
-Выкладываем новый стенд и сборщик.
-
-Добавили песочницу: теперь в ней можно смотреть примеры компонентов.
-
-⚠️ Внимание: изменилась структура экспорта компонетов
-
----
-
 - [chore(stand): new stand and new builder (#21)](https://github.com/consta-design-system/rc-tree-adapter/commit/55c07cdffdf5aa8def4f65b12b955efd73d11b84) - [@gizeasy](https://github.com/gizeasy)
 - [chore(stand): add automation publish stand](https://github.com/consta-design-system/rc-tree-adapter/commit/c4ef67888b448c68a4bfea7fc71761a6f9f6ddff) - [@gizeasy](https://github.com/gizeasy)
-
+- [chore(stand): add automation publish stand](https://github.com/consta-design-system/rc-tree-adapter/commit/1c9be2751bc6f27ed6d5a5612c31f1d4ffe94062) - [@gizeasy](https://github.com/gizeasy)
+- [chore(stand): add automation publish stand](https://github.com/consta-design-system/rc-tree-adapter/commit/4d853bf5e31d98886093cb216b04d7b806fdbdcf) - [@gizeasy](https://github.com/gizeasy)
 
 --------------------
 
