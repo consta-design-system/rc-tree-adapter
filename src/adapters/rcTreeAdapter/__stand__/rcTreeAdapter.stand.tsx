@@ -6,6 +6,7 @@ export default createStand({
   group: 'adapters',
   description: 'Адаптер для стилизации дерева.',
   version: '1.0.0',
+  alias: ['дерево', 'адаптер', 'стилизация'],
   sandbox: 'rctreeadapter-juyg0i',
   status: 'stable',
 });
