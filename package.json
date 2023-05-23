@@ -1,6 +1,6 @@
 {
   "name": "@consta/rc-tree-adapter",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "scripts": {
     "postinstall": "husky install",
     "tsc-dry-run": "tsc --noEmit",
