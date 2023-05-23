@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0.2 (23/05/2023)
+Запускать локальный сервер разработки и сборку пакетов теперь можно и на ОС Windows.
+
+---
+
+- [chore: configure build for windows (#33)](https://github.com/consta-design-system/rc-tree-adapter/commit/c2d2e4c57c4d5ff3c2e8d316b1807545c984a10c) - [@gizeasy](https://github.com/gizeasy)
+- [docs(rc-tree-adapter): add aliases (#32)](https://github.com/consta-design-system/rc-tree-adapter/commit/95aa272c5c0c63ce01e575dacd561660dcd7eadb) - [@N1MBER](https://github.com/N1MBER)
+- [chore: update @consta/stand](https://github.com/consta-design-system/rc-tree-adapter/commit/c7499074523285ca171a8f184d84979290d0487b) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v2.0.1 (30/11/2022)
 - [fix(prefix): add prefix for class names (#30)](https://github.com/consta-design-system/rc-tree-adapter/commit/a103f7060ebc1ae3bdfb9d786415fd1373a7ccc0) - [@N1MBER](https://github.com/N1MBER)
 - [docs(portal): readme, stand, version (#29)](https://github.com/consta-design-system/rc-tree-adapter/commit/ff991842a75f7c6f15692ebf6f8d5e5bce06c3e9) - [@arhayka](https://github.com/arhayka)
