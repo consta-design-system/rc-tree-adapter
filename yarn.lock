@@ -1706,21 +1706,21 @@
   resolved "https://registry.yarnpkg.com/@consta/icons/-/icons-0.1.1.tgz#454461a9acf3dc8b42e1654b4298e5f929c42937"
   integrity sha512-55NsjyaXFuYyr6CiptXuFMe/AUd7HMs8IgSaOGfV+wbMbSVg88u8dwJ5km3sPaHNFiD0vg8FNqGFc1F37K18zQ==
 
-"@consta/icons@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@consta/icons/-/icons-0.2.0.tgz#1277aa2f0a40769f80f51be965b62fb42070a5fd"
-  integrity sha512-ZqMUGvxARWgKkDCggdGLvQzUAOL8DK5sAEgSQX5q/xz9IjoJoPwyMcdu4Bg1yNvYU0CxnRcP63ZYAYa7RoZNLQ==
+"@consta/icons@^0.3.0":
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/@consta/icons/-/icons-0.3.0.tgz#d411b8f5c3afb47476e5a2d194f642f58a7772cc"
+  integrity sha512-jIxl08MDj7QO+fyLdfmQs2rd7jqro0rXco78Gj+s4laM1/15Q3qrTEgpbCjwcvLY7dgTnY0PPQxz2OU9dsVRVA==
 
-"@consta/stand@^0.0.102":
-  version "0.0.102"
-  resolved "https://registry.yarnpkg.com/@consta/stand/-/stand-0.0.102.tgz#15abcfd6bee0dea21ad3e2431bf0fa17312c850b"
-  integrity sha512-pYTkejcEcXzJNZmPz3HhpGouCUV4KRNoOh391qdWtJhI8Qj+wPUsS3wG0tEytjbNO9WSDOlcCQX2UPJP7LUjaw==
+"@consta/stand@^0.0.109":
+  version "0.0.109"
+  resolved "https://registry.yarnpkg.com/@consta/stand/-/stand-0.0.109.tgz#a924ead81544fc57bc9378795804c0ad6b9a3067"
+  integrity sha512-LSHwVvFEBp8HuglgrWfFOle7/3t84U4srLqC97+OXv8Ux1XZBg906Lls3SIwQDsfGitxyD6c4El9gIWAoibdFg==
   dependencies:
     "@bem-react/classname" "^1.5.12"
     "@bem-react/classnames" "^1.3.10"
     "@consta/header" "^1.2.0"
-    "@consta/icons" "^0.2.0"
-    "@consta/uikit" "^4.14.2"
+    "@consta/icons" "^0.3.0"
+    "@consta/uikit" "^4.17.0"
     "@mdx-js/loader" "^2.3.0"
     "@mdx-js/react" "^2.3.0"
     "@oclif/command" "^1.8.22"
@@ -1787,10 +1787,10 @@
     webpack-manifest-plugin "^5.0.0"
     workbox-webpack-plugin "^6.4.1"
 
-"@consta/uikit@^4.14.2":
-  version "4.15.0"
-  resolved "https://registry.yarnpkg.com/@consta/uikit/-/uikit-4.15.0.tgz#a40becc818b00ee396947b6d61b6a029b1ce4427"
-  integrity sha512-uAmcUnWCgOewg8Zu6/f+hp4OU2b2Fxg9upH/2h31GRnDiSmwOc60v/X+QbfW6toY4cNad3t6UAGFG6XLendg1w==
+"@consta/uikit@^4.17.0":
+  version "4.17.2"
+  resolved "https://registry.yarnpkg.com/@consta/uikit/-/uikit-4.17.2.tgz#958331de54018f65d458d3b4e1c5ab46d8825ef8"
+  integrity sha512-jKjUNURMoLKVcIW1YATXi5u1/ofep0/wim19WVbjjET2LnkTeGgo+QQgN4ZTIawme+g80gsEjwOfOSYQiQNmlA==
   dependencies:
     "@bem-react/classname" "^1.5.12"
     "@bem-react/classnames" "^1.3.10"
