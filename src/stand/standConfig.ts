@@ -29,5 +29,5 @@ export const { createStand } = createConfig({
     'Адаптер для дерева из библиотеки rc-tree. Подходит для создания иерархических структур.',
   repositoryUrl: 'https://github.com/consta-design-system/rc-tree-adapter',
   figmaUrl:
-    'https://www.figma.com/file/LKYyjgQ3khFHvXraZAG1n1/Consta-Components?type=design&node-id=32-11679&t=h5q4xoKa2C1fSb91-0',
+    'https://www.figma.com/file/3RsiLTgTuXpdnqG7gW8UwL/Consta-Components-(Community)?type=design&node-id=32-11679&t=ponDmJar7RUOypIn-0',
 });
