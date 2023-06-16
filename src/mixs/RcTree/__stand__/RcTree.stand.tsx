@@ -9,4 +9,6 @@ export default createStand({
   alias: ['дерево', 'миксин', 'mixs', 'стилизация'],
   status: 'stable',
   sandbox: 'cnrctree-5g7840',
+  figma:
+    'https://www.figma.com/file/3RsiLTgTuXpdnqG7gW8UwL/Consta-Components-(Community)?type=design&node-id=32-11679&t=ponDmJar7RUOypIn-0',
 });
