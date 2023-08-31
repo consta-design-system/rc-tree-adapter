@@ -24,13 +24,35 @@
     }
   }
 
+  &_withNestedLines {
+    & .rctr--RcTree-indent {
+      &:has(span) {
+        & > span {
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: calc(var(--tree-element-size) / 2);
+            width: 1px;
+            height: calc(var(--tree-element-size) + var(--space-2xs));
+            background: var(--color-bg-border);
+          }
+        }
+      }
+    }
+  }
+
   &-focused:not(&-active-focused) {
     border-color: hsl(180, 100%, 50%);
   }
 
   &-switcher {
+    min-width: var(--tree-element-size);
     color: var(--color-control-typo-ghost);
     background-image: none !important;
+    cursor: pointer;
     transition: transform 0.3s, background-color 0.3s;
 
     &-noop {
@@ -244,14 +266,19 @@
   &-indent {
     display: inline-block;
 
+    &:not(:has(span)) {
+      display: none;
+    }
+
     & > *:not(:last-child) {
-      padding-right: var(--space-xs);
+      margin-right: var(--space-xs);
     }
   }
 
   &-indent-unit {
     display: inline-block;
     width: var(--tree-element-size);
+    min-width: var(--tree-element-size);
   }
 }
 

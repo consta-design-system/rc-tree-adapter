@@ -16,10 +16,12 @@ const Variants = () => {
   const checkable = useBoolean('checkable', false);
   const showIcon = useBoolean('showIcon', false);
   const defaultExpandAll = useBoolean('defaultExpandAll', false);
+  const withNestedLines = useBoolean('withNestedLines', false);
 
   const treeProps = rcTreeAdapter({
     showIcon,
     size,
+    withNestedLines,
   });
 
   return (
