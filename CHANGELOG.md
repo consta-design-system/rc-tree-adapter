@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.0.3 (31/08/2023)
+Самое важное:
+- Добавили модификацию `withNestedLines`
+
+---
+
+- [feat(rcTreeAdapter): add prop withNestedLines (#36)](https://github.com/consta-design-system/rc-tree-adapter/commit/db38b93e87004b689223cf5877e6c246c039821d) - [@N1MBER](https://github.com/N1MBER)
+- [chore: edit deploy config and codeowners (#35)](https://github.com/consta-design-system/rc-tree-adapter/commit/b99eb7532287220e9de256202cd9f5a28ae848f4) - [@gizeasy](https://github.com/gizeasy)
+- [docs(standConfig): add figmaUrl (#34)](https://github.com/consta-design-system/rc-tree-adapter/commit/dd526962f758997adc232dcdf0f058aa9dd7798f) - [@gizeasy](https://github.com/gizeasy)
+- [docs(standConfig): add figmaUrl (#34)](https://github.com/consta-design-system/rc-tree-adapter/commit/38d7b736ea248505e087c4886e454174588f7268) - [@gizeasy](https://github.com/gizeasy)
+
+--------------------
+
 ## v2.0.2 (23/05/2023)
 Запускать локальный сервер разработки и сборку пакетов теперь можно и на ОС Windows.
 
