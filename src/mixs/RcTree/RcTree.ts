@@ -6,6 +6,7 @@ export const cnTree = cn('RcTree');
 
 type RcTreeProps = {
   size?: 'm' | 's';
+  withNestedLines?: boolean;
 };
 
 export const cnRcTree = (
@@ -13,8 +14,8 @@ export const cnRcTree = (
   classNames?: Array<string | undefined>,
 ) => {
   const params = props || ({} as RcTreeProps);
-  const { size = 's' } = params;
-  return cnTree({ size: size || 's' }, classNames)
+  const { size = 's', withNestedLines } = params;
+  return cnTree({ size: size || 's', withNestedLines }, classNames)
     .split(' ')
     .reverse()
     .join(' ');

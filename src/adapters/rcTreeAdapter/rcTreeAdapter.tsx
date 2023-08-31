@@ -7,11 +7,17 @@ import { RcTreeAdapter, RcTreeAdapterProps } from './helper';
 
 export const rcTreeAdapter: RcTreeAdapter = (props) => {
   const params = props || ({} as RcTreeAdapterProps);
-  const { size, prefixCls, switcherIcon, showIcon = false } = params;
+  const {
+    size = 's',
+    prefixCls,
+    switcherIcon,
+    showIcon = false,
+    withNestedLines,
+  } = params;
 
   return {
     switcherIcon: switcherIcon || <IconArrowRight size={size} />,
-    prefixCls: cnRcTree({ size }, [prefixCls]),
+    prefixCls: cnRcTree({ size, withNestedLines }, [prefixCls]),
     showIcon,
   };
 };

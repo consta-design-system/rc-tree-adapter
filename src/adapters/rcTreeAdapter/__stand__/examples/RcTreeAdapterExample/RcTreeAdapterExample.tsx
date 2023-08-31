@@ -30,6 +30,12 @@ export function RcTreeAdapterExampleHeight() {
   );
 }
 
+export function RcTreeAdapterExampleNestedLines() {
+  const treeProps = rcTreeAdapter({ withNestedLines: true });
+
+  return <RCTree {...treeProps} treeData={data} defaultExpandAll />;
+}
+
 export function RcTreeAdapterExampleIcon() {
   const treeProps = rcTreeAdapter();
 
