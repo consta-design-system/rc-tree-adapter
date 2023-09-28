@@ -1,12 +1,8 @@
-export type Node = {
-  key: string;
-  title: string;
-  visible?: boolean;
-  children?: Node[];
-  disableCheckbox?: boolean;
-};
+import { IconDinosaur } from '@consta/uikit/IconDinosaur';
+import { DataNode } from 'rc-tree/lib/interface';
+import React from 'react';
 
-export const data: Node[] = [
+export const data: DataNode[] = [
   {
     key: '0-0',
     title: 'Ветка 1',
@@ -14,13 +10,23 @@ export const data: Node[] = [
       {
         key: '0-0-0',
         title: 'Ветка 1-1',
-        children: [{ key: '0-0-0-0', title: 'Ветка 1-1-0' }],
+        children: [
+          {
+            key: '0-0-0-0',
+            title: 'Ветка 1-1-0',
+            icon: <IconDinosaur size="xs" />,
+          },
+        ],
       },
       {
         key: '0-0-1',
         title: 'Ветка 1-2',
         children: [
-          { key: '0-0-1-0', title: 'Ветка 1-2-0', disableCheckbox: true },
+          {
+            key: '0-0-1-0',
+            title: 'Ветка 1-2-0',
+            disableCheckbox: true,
+          },
           { key: '0-0-1-1', title: 'Ветка 1-2-1' },
           { key: '0-0-1-2', title: 'Ветка 1-2-2' },
           { key: '0-0-1-3', title: 'Ветка 1-2-3' },

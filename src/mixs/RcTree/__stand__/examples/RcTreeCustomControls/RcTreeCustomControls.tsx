@@ -1,5 +1,6 @@
 import './RcTreeCustomControls.css';
 
+import { Example } from '@consta/stand';
 import { Button } from '@consta/uikit/Button';
 import { IconEye } from '@consta/uikit/IconEye';
 import { IconEyeClose } from '@consta/uikit/IconEyeClose';
@@ -10,15 +11,12 @@ import { useFlag } from '@consta/uikit/useFlag';
 import Tree, { TreeNode } from 'rc-tree';
 import React, { useState } from 'react';
 
-import {
-  data,
-  Node as NodeType,
-} from '##/adapters/rcTreeAdapter/__mocks__/data.mock';
 import { cn } from '##/utils/bem';
 
 import { cnRcTree } from '../../../../RcTree/RcTree';
+import { data, Node } from '../../../__mocks__/data.mock';
 
-const changeVisisble = (key: string, nodes: NodeType[]): NodeType[] => {
+const changeVisisble = (key: string, nodes: Node[]): Node[] => {
   return nodes.map((node) => {
     if (node.key === key) {
       node.visible = !(typeof node.visible === 'undefined'
@@ -67,9 +65,7 @@ const CustomLabel = (props: {
   );
 };
 
-const customNode = (
-  params: NodeType & { handleClick: (key: string) => void },
-) => {
+const customNode = (params: Node & { handleClick: (key: string) => void }) => {
   const {
     title,
     key,
@@ -100,15 +96,17 @@ const customNode = (
 
 export const RcTreeCustomControls = () => {
   const prefix = cnRcTree({ size: 'm' }, ['RcTreeCustomControls']);
-  const [nodes, setNodes] = useState<NodeType[]>(data);
+  const [nodes, setNodes] = useState<Node[]>(data);
 
   const handleClick = (key: string) => {
     setNodes(changeVisisble(key, nodes));
   };
 
   return (
-    <Tree prefixCls={prefix} showLine checkable defaultExpandAll>
-      {nodes.map((node) => customNode({ handleClick, ...node }))}
-    </Tree>
+    <Example>
+      <Tree prefixCls={prefix} showLine checkable defaultExpandAll>
+        {nodes.map((node) => customNode({ handleClick, ...node }))}
+      </Tree>
+    </Example>
   );
 };

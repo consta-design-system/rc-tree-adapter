@@ -2,7 +2,6 @@ import { IconType } from 'rc-tree/lib/interface';
 
 export type RcTreeAdapterProps = RcTreeAdapterPropsResults & {
   size?: 's' | 'm';
-  withNestedLines?: boolean;
 };
 
 export type RcTreeAdapterPropsResults = {
