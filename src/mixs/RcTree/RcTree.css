@@ -38,6 +38,8 @@
 
   &-list {
     &-holder {
+      overflow-x: hidden;
+
       &-inner {
         & > *:not(:last-child) {
           margin-bottom: var(--space-2xs);
@@ -50,39 +52,87 @@
     &-content {
       &-wrapper {
         display: inline-flex;
+        overflow: hidden;
         align-items: center;
         box-sizing: border-box;
-        width: 100%;
         height: var(--rc-tree-element-size);
         padding: 0 var(--space-xs);
+        flex-grow: 1;
         gap: var(--space-xs);
       }
     }
   }
 
   &-show-line {
-    & .rctr--RcTree-indent {
-      &:has(span) {
-        & > span {
-          position: relative;
+    & .rctr--RcTree-list-holder-inner {
+      & > .rctr--RcTree-treenode {
+        & .rctr--RcTree-indent {
+          &:has(span) {
+            & > span {
+              position: relative;
 
-          &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: calc(var(--rc-tree-element-size) / 2);
-            width: 1px;
-            height: calc(var(--rc-tree-element-size) + var(--space-2xs));
-            background: var(--color-bg-border);
+              &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: calc(var(--rc-tree-element-size) / 2);
+                width: 1px;
+                height: calc(var(--rc-tree-element-size) + var(--space-2xs));
+                background: var(--color-bg-border);
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          & .rctr--RcTree-indent {
+            &:has(span) {
+              & > span::after {
+                height: var(--rc-tree-element-size);
+              }
+            }
           }
         }
       }
     }
   }
 
+  &-title {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
   &-treenode {
+    --rc-tree-checkbox-offset: 0;
+    --rc-tree-indent-offset: 0;
+    --rc-tree-switcher-offset: 0;
     display: inline-flex;
+    max-width: 100%;
     height: var(--rc-tree-element-size);
+
+    & .rctr--RcTree-switcher:not(.rctr--RcTree-switcher-noop) {
+      --rc-tree-switcher-offset: var(--rc-tree-element-size);
+    }
+
+    & .rctr--RcTree-cheeckbox {
+      --rc-tree-checkbox-offset:
+        calc(
+          var(--rc-tree-checkbox-size) + var(--space-xs)
+        );
+    }
+
+    & .rctr--RcTree-indent {
+      &:first-child:last-child {
+        --rc-tree-indent-offset: var(--rc-tree-element-size);
+      }
+    }
+
+    /* & .rctr--RcTree-node-content-wrapper {
+      max-width: calc(
+        100% - var(--rc-tree-switcher-offset) - var(--rc-tree-checkbox-offset)
+      );
+    } */
 
     &-disabled {
       & .rctr--RcTree-title {
