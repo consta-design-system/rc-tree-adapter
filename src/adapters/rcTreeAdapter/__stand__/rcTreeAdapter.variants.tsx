@@ -1,11 +1,11 @@
 import './rcTreeAdapterVariants.css';
 
-import { cn } from '@bem-react/classname';
 import { useBoolean, useSelect } from '@consta/stand';
 import RCTree from 'rc-tree';
 import React from 'react';
 
 import { rcTreeAdapter } from '##/adapters/rcTreeAdapter/rcTreeAdapter';
+import { cn } from '##/utils/bem';
 
 import { data } from '../__mocks__/data.mock';
 
@@ -13,15 +13,14 @@ const cnRcTreeAdapterVariants = cn('rcTreeAdapterVariants');
 
 const Variants = () => {
   const size = useSelect('size', ['s', 'm'], 's');
-  const checkable = useBoolean('checkable', false);
-  const showIcon = useBoolean('showIcon', false);
-  const defaultExpandAll = useBoolean('defaultExpandAll', false);
-  const withNestedLines = useBoolean('withNestedLines', false);
+  const checkable = useBoolean('checkable', true);
+  const selectable = useBoolean('selectable', true);
+  const showIcon = useBoolean('showIcon', true);
+  const showLine = useBoolean('showLine', true);
+  const defaultExpandAll = useBoolean('defaultExpandAll', true);
 
   const treeProps = rcTreeAdapter({
-    showIcon,
     size,
-    withNestedLines,
   });
 
   return (
@@ -30,6 +29,10 @@ const Variants = () => {
         {...treeProps}
         height={150}
         treeData={data}
+        showIcon={showIcon}
+        draggable
+        showLine={showLine}
+        selectable={selectable}
         defaultExpandAll={defaultExpandAll}
         checkable={checkable}
       />
