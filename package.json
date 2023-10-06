@@ -51,7 +51,7 @@
     "@consta/uikit": ">= 3.9.3"
   },
   "dependencies": {
-    "rc-tree": "^5.2.0"
+    "rc-tree": "^5.7.12"
   },
   "config": {
     "commitizen": {
