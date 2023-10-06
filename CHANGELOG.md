@@ -1,5 +1,18 @@
 # Changelog
 
+## v2.1.0 (06/10/2023)
+Самое важное:
+
+- Убрали свойство `withNestedLines`, теперь отрисовка линий наследования будет производиться через свойство `showLine` в компоненте `rc-tree`
+- Переписаны стили, теперь маски иконок из миксина не конфликтуют с пользовательскими иконками
+
+---
+
+- [chore(rc-tree): update version (#38)](https://github.com/consta-design-system/rc-tree-adapter/commit/ad6fb9f6fb7009fbd69e3a057f6c0ecec5edb551) - [@N1MBER](https://github.com/N1MBER)
+- [refactor(RcTreeAdapter): rewrite styles / types and docs (#37)](https://github.com/consta-design-system/rc-tree-adapter/commit/911f1a95ae77a96c8ca5d5c54afb2774fdd90a17) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v2.0.3 (31/08/2023)
 Самое важное:
 - Добавили модификацию `withNestedLines`
