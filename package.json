@@ -48,7 +48,8 @@
     "Chrome >= 75"
   ],
   "peerDependencies": {
-    "@consta/uikit": ">= 3.9.3"
+    "@consta/uikit": ">= 4.31.1",
+    "@consta/icons": ">= 0.9.3"
   },
   "dependencies": {
     "rc-tree": "^5.7.12"
