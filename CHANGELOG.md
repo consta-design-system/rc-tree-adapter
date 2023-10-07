@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.1.1 (07/10/2023)
+Самое важное:
+
+- Исправлено поведение дефолтного `switcherIcon` при разворачивании дерева
+- Доработаны стили для узла дерева
+
+---
+
+- [fix(rcTreeAdapter): fixed icon behavior and tree node styles (#39)](https://github.com/consta-design-system/rc-tree-adapter/commit/e74a9ed63b625e2afdca35082c768b25afba4a97) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v2.1.0 (06/10/2023)
 Самое важное:
 
