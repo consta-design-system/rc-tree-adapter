@@ -1,11 +1,11 @@
 import './RcTreeCustomControls.css';
 
+import { IconEye } from '@consta/icons/IconEye';
+import { IconEyeClose } from '@consta/icons/IconEyeClose';
+import { IconMeatball } from '@consta/icons/IconMeatball';
+import { IconSettings } from '@consta/icons/IconSettings';
 import { Example } from '@consta/stand';
 import { Button } from '@consta/uikit/Button';
-import { IconEye } from '@consta/uikit/IconEye';
-import { IconEyeClose } from '@consta/uikit/IconEyeClose';
-import { IconMeatball } from '@consta/uikit/IconMeatball';
-import { IconSettings } from '@consta/uikit/IconSettings';
 import { Text } from '@consta/uikit/Text';
 import { useFlag } from '@consta/uikit/useFlag';
 import Tree, { TreeNode } from 'rc-tree';
@@ -45,7 +45,12 @@ const CustomLabel = (props: {
       onMouseEnter={setHovered.on}
       onMouseLeave={setHovered.off}
     >
-      <Text className={cnRcTreeCustomControls('Title')} size="xs">
+      <Text
+        className={cnRcTreeCustomControls('Title')}
+        size="xs"
+        view="primary"
+        lineHeight="m"
+      >
         {title}
       </Text>
       {hovered && (

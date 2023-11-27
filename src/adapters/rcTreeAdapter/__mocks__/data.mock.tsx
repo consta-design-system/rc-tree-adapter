@@ -1,4 +1,4 @@
-import { IconDinosaur } from '@consta/uikit/IconDinosaur';
+import { IconDinosaur } from '@consta/icons/IconDinosaur';
 import { DataNode } from 'rc-tree/lib/interface';
 import React from 'react';
 
