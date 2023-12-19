@@ -59,7 +59,12 @@ const CustomLabel = (props: {
       onMouseEnter={setHovered.on}
       onMouseLeave={setHovered.off}
     >
-      <Text className={cnRcTreeCustomControls('Title')} size="xs">
+      <Text
+        className={cnRcTreeCustomControls('Title')}
+        size="xs"
+        view="primary"
+        lineHeight="m"
+      >
         {title}
       </Text>
       {hovered && (
