@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.0.0 (19/12/2023)
+Самое важное:
+- Сторонние зависимости перенесены в `peerDependencies`. Установить их вы сможете самостоятельно, полный список доступен [здесь](https://github.com/consta-design-system/rc-tree-adapter/blob/master/package.json) 
+- Добавлена поддержка `@consta/uikit` `v5.0.0`
+
+---
+
+- [chore: update uikit version (#41)](https://github.com/consta-design-system/rc-tree-adapter/commit/0df71fb76d53a9405c2d1ec62467af15348e4154) - [@gizeasy](https://github.com/gizeasy)
+- [chore(utils): added status classNames (#40)](https://github.com/consta-design-system/rc-tree-adapter/commit/bc746cdd9ee8e6eee437e84ad875d849367b6072) - [@N1MBER](https://github.com/N1MBER)
+
+--------------------
+
 ## v2.1.1 (07/10/2023)
 Самое важное:
 
